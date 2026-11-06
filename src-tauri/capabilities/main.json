@@ -9,6 +9,17 @@
     "core:default",
     "dialog:allow-save",
     "fs:allow-write-text-file",
-    "clipboard-manager:allow-write-text"
+    "clipboard-manager:allow-write-text",
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [
+        {
+          "url": "https://github.com/suducat"
+        },
+        {
+          "url": "https://github.com/suducat/SuduBox/issues"
+        }
+      ]
+    }
   ]
 }

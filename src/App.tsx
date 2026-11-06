@@ -1,3 +1,5 @@
+import { Author } from "./components/Author";
+import { Onboarding, GUIDE_KEY } from "./components/Onboarding";
 import { useState, useEffect, useRef } from "react";
 import {
   Search,
@@ -5,7 +7,6 @@ import {
   X,
   ChevronRight,
   Star,
-  ShieldCheck,
   ArrowUpRight,
   Command,
 } from "lucide-react";
@@ -79,6 +80,18 @@ function ToolCenter() {
 export default function App() {
   const { data } = useStore();
   const [route, setRoute] = useState(location.hash.slice(2) || "home");
+  const [guide, setGuide] = useState(
+    () => localStorage.getItem(GUIDE_KEY) !== "1",
+  );
+  const closeGuide = () => {
+    localStorage.setItem(GUIDE_KEY, "1");
+    setGuide(false);
+  };
+  useEffect(() => {
+    const open = () => setGuide(true);
+    window.addEventListener("sudubox:show-guide", open);
+    return () => window.removeEventListener("sudubox:show-guide", open);
+  }, []);
   const [menu, setMenu] = useState(false);
   const [q, setQ] = useState("");
   const [searching, setSearching] = useState(false);
@@ -132,6 +145,7 @@ export default function App() {
     settings: <Preferences />,
     backup: <Backup />,
     about: <About />,
+    author: <Author />,
     tools: <ToolCenter />,
   };
   const results = tools.filter((t) =>
@@ -139,6 +153,7 @@ export default function App() {
   );
   return (
     <div className="app-shell">
+      {guide && <Onboarding close={closeGuide} />}
       {menu && (
         <button
           className="sidebar-scrim"
@@ -175,12 +190,6 @@ export default function App() {
             </div>
           ))}
         </nav>
-        <div className="local-badge">
-          <ShieldCheck size={17} />
-          <span>
-            数据只在你的设备<small>安心记录，自由掌握</small>
-          </span>
-        </div>
       </aside>
       <div className="main-shell">
         <header className="topbar">
@@ -207,10 +216,6 @@ export default function App() {
             <span>搜索工具，开始高效学习</span>
             <kbd>⌘ K</kbd>
           </button>
-          <span className="local-mode">
-            <span className="status-dot" />
-            本地学习空间
-          </span>
         </header>
         <main id="main" className="main-content" key={route}>
           {pages[route] ??

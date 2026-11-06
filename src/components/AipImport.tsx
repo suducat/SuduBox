@@ -26,12 +26,13 @@ export function AipImport() {
   return (
     <>
       <button
+        className="primary"
         onClick={() => {
           setSelected(data.preferences.aipSelections?.[preset.id] ?? {});
           setOpen(true);
         }}
       >
-        预览真实课表 · {preset.id}
+        选择科目并预览 · {preset.id}
       </button>
       {data.preferences.scheduleRecovery && (
         <button onClick={() => setRestoring(true)}>恢复替换前课表</button>
@@ -95,13 +96,9 @@ export function AipImport() {
           }}
         >
           <p>
-            {preset.sheet} · 用户指定版本 {preset.version} · 结束日期未知。
-            {preset.slots.length}
-            个时段，午休另计。教师与原始备注保留在课程备注中。
+            {preset.grade} · {preset.id} · {preset.version}
           </p>
-          <p>
-            每个选修池选一次，整周同步；不选或该时段没有所选科目时为自习。选中一门会自动取消与它同时上课的其他科目。
-          </p>
+          <p>每组选一门，整周生效。没有所选科目的时段安排为自习。</p>
           {model.sets.map((keys, i) => (
             <fieldset key={keys.join(",")}>
               <legend>选修池 {i + 1}</legend>
@@ -131,9 +128,7 @@ export function AipImport() {
                     <strong>
                       周{slot.day} {slot.start}–{slot.end}
                     </strong>
-                    <small>
-                      {preset.sheet}!{slot.cell}
-                    </small>
+
                     <strong>
                       安排：{preview[index].name} {preview[index].room}
                     </strong>

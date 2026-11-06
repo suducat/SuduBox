@@ -127,6 +127,7 @@ export default function Schedule() {
         action={
           <div className="inline">
             <button
+              className="aip-entry"
               onClick={async () => {
                 if (
                   data.preferences.aipIdentity === "yes" ||
@@ -138,7 +139,7 @@ export default function Schedule() {
                   setSetupOpen(true);
               }}
             >
-              我是 AIP 学生
+              我是 AIP 学生 · 设置我的课表
             </button>
             <AddButton onClick={() => add()}>添加课程</AddButton>
           </div>

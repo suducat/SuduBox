@@ -199,9 +199,6 @@ export function Notes() {
           action={<AddButton onClick={() => void add()}>写一张便签</AddButton>}
         />
       )}
-      <p className="footnote">
-        便签内容自动保存到当前浏览器。置顶便签优先显示。
-      </p>
       {remove && (
         <Confirm
           title="删除便签"

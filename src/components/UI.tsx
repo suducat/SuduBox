@@ -29,15 +29,14 @@ export function PageHead({
 }: {
   eyebrow?: string;
   title: string;
-  description: string;
+  description?: string;
   action?: ReactNode;
 }) {
   return (
     <header className="page-head">
       <div>
-        <div className="eyebrow">{eyebrow || "YOUR STUDY SPACE"}</div>
         <h1>{title}</h1>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
       {action}
     </header>

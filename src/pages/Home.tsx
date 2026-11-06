@@ -56,11 +56,9 @@ export default function Home() {
     <>
       <div className="home-heading">
         <div>
-          <div className="eyebrow">YOUR PERSONAL STUDY SPACE</div>
           <h1>
             {greeting}，继续向前 <Sun size={28} />
           </h1>
-          <p>学习有节奏，生活有余地。今天也从一件小事开始。</p>
         </div>
         <div className="date-label">
           <CalendarDays size={16} />
@@ -92,7 +90,6 @@ export default function Home() {
               <br />
               把时间留给成长。
             </h2>
-            <p>你的课程、灵感与每一次专注，都在这里。</p>
             <a className="button" href="#/schedule">
               安排我的课程 <ArrowRight size={16} />
             </a>
@@ -150,9 +147,7 @@ export default function Home() {
             label: "待复习知识点",
             number: review.length,
             unit: "条",
-            caption: review.length
-              ? "一点点弄懂，就在进步"
-              : "保持好奇，随时记录",
+            caption: review.length ? "一点点弄懂，就在进步" : "暂无待复习内容",
             color: "orange",
           },
           {
@@ -240,7 +235,7 @@ export default function Home() {
             </>
           ) : (
             <Empty
-              title="今天的安排，由你书写"
+              title="今天还没有课程"
               description="添加课表，自动掌握当前与下一节课程。"
               action={
                 <a href="#/schedule" className="text-button">
@@ -267,7 +262,7 @@ export default function Home() {
             </div>
           ) : (
             <Empty
-              title="目标，从一个日期开始"
+              title="还没有考试"
               description="添加考试并固定到首页，让准备更有方向。"
               action={
                 <a href="#/exams" className="text-button">
@@ -276,9 +271,6 @@ export default function Home() {
               }
             />
           )}
-          <div className="gentle-tip">
-            <span>✦</span> 不必急于一时，每天进步一点。
-          </div>
         </Panel>
         <Panel title="待复习 · 把没听懂的弄懂" link="schedule">
           {review.length ? (
@@ -337,7 +329,7 @@ export default function Home() {
             </div>
           ) : (
             <Empty
-              title="让脑袋轻一点"
+              title="还没有今日便签"
               description="随手写下作业、灵感，或今天想完成的小事。"
               action={
                 <a href="#/notes" className="text-button">
@@ -368,10 +360,6 @@ export default function Home() {
           </a>
         ))}
       </div>
-      <footer className="home-footer">
-        <span>用心学习，自在成长。</span>
-        <span>本地保存 · 无需账号 · 记得定期备份</span>
-      </footer>
       {lesson && (
         <Modal
           title={`${lesson.courseName} · 待复习`}

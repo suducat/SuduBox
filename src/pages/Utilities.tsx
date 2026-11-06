@@ -68,7 +68,7 @@ export function RandomTool() {
       return;
     }
     if (!all.length) {
-      setError("题池已抽完，请重置题池。");
+      setError("题池已抽完，请重新开始。");
       return;
     }
     setError("");
@@ -96,158 +96,162 @@ export function RandomTool() {
         title="随机抽题器"
         description="抽一道练练，想好再看答案"
       />
-      <QuestionCards />
-      <div className="two-columns">
-        <Panel title="设置题池">
-          <div className="tabs">
-            <button
-              className={mode === "range" ? "active" : ""}
-              onClick={() => {
-                setMode("range");
-                reset();
-              }}
-            >
-              题号范围
-            </button>
-            <button
-              className={mode === "list" ? "active" : ""}
-              onClick={() => {
-                setMode("list");
-                reset();
-              }}
-            >
-              题目 / 知识点列表
-            </button>
-          </div>
-          <div className="form">
-            {mode === "range" ? (
-              <div className="form-grid">
+      <div className="tabs random-modes" aria-label="抽题方式">
+        {[
+          ["range", "按题号抽"],
+          ["list", "粘贴题目"],
+          ["cards", "我的题库"],
+        ].map(([value, label]) => (
+          <button
+            key={value}
+            className={mode === value ? "active" : ""}
+            aria-pressed={mode === value}
+            onClick={() => {
+              setMode(value);
+              reset();
+            }}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      {mode === "cards" ? (
+        <QuestionCards />
+      ) : (
+        <div className="two-columns random-workspace">
+          <Panel title="抽题设置">
+            <div className="form">
+              {mode === "range" ? (
+                <div className="form-grid">
+                  <label>
+                    起始题号
+                    <input
+                      type="number"
+                      value={start}
+                      onChange={(e) => {
+                        const inputValue = e.target.value;
+
+                        setStart(Number(inputValue));
+                        reset();
+                      }}
+                    />
+                  </label>
+                  <label>
+                    结束题号
+                    <input
+                      type="number"
+                      value={end}
+                      onChange={(e) => {
+                        const inputValue = e.target.value;
+
+                        setEnd(Number(inputValue));
+                        reset();
+                      }}
+                    />
+                  </label>
+                </div>
+              ) : (
                 <label>
-                  起始题号
-                  <input
-                    type="number"
-                    value={start}
+                  每行一个项目
+                  <textarea
+                    rows={9}
+                    placeholder="粘贴题目或知识点，每行一项"
+                    value={text}
                     onChange={(e) => {
                       const inputValue = e.target.value;
 
-                      setStart(Number(inputValue));
+                      setText(inputValue);
+                      const lines = inputValue.split("\n");
+                      void update((d) => ({
+                        ...d,
+                        preferences: {
+                          ...d.preferences,
+                          legacyQuestions: lines,
+                        },
+                      }));
                       reset();
                     }}
                   />
                 </label>
-                <label>
-                  结束题号
-                  <input
-                    type="number"
-                    value={end}
-                    onChange={(e) => {
-                      const inputValue = e.target.value;
-
-                      setEnd(Number(inputValue));
-                      reset();
-                    }}
-                  />
-                </label>
-              </div>
-            ) : (
+              )}
               <label>
-                每行一个项目
-                <textarea
-                  rows={9}
-                  placeholder="粘贴题目或知识点，每行一项"
-                  value={text}
+                每次抽取
+                <input
+                  type="number"
+                  min="1"
+                  max="1000"
+                  value={count}
                   onChange={(e) => {
                     const inputValue = e.target.value;
 
-                    setText(inputValue);
-                    const lines = inputValue.split("\n");
-                    void update((d) => ({
-                      ...d,
-                      preferences: { ...d.preferences, legacyQuestions: lines },
-                    }));
-                    reset();
+                    return setCount(Number(inputValue));
                   }}
                 />
               </label>
-            )}
-            <label>
-              每次抽取
-              <input
-                type="number"
-                min="1"
-                max="1000"
-                value={count}
-                onChange={(e) => {
-                  const inputValue = e.target.value;
-
-                  return setCount(Number(inputValue));
-                }}
-              />
-            </label>
-            <label className="check">
-              <input
-                type="checkbox"
-                checked={unique}
-                onChange={(e) => {
-                  const inputChecked = (e.target as HTMLInputElement).checked;
-                  setUnique(inputChecked);
-                  reset();
-                }}
-              />
-              不重复抽取（重复列表项会自动合并）
-            </label>
-            {error && (
-              <p role="alert" className="warning">
-                {error}
-              </p>
-            )}
-            <div className="inline">
-              <button
-                className="primary"
-                disabled={unique && pool?.length === 0}
-                onClick={pick}
-              >
-                <Shuffle size={18} />
-                抽取
-              </button>
-              <button onClick={reset}>
-                <RotateCcw size={16} />
-                重置题池
-              </button>
+              <label className="check">
+                <input
+                  type="checkbox"
+                  checked={unique}
+                  onChange={(e) => {
+                    const inputChecked = (e.target as HTMLInputElement).checked;
+                    setUnique(inputChecked);
+                    reset();
+                  }}
+                />
+                不重复抽取
+              </label>
+              {error && (
+                <p role="alert" className="warning">
+                  {error}
+                </p>
+              )}
+              <div className="inline">
+                <button
+                  className="primary"
+                  disabled={unique && pool?.length === 0}
+                  onClick={pick}
+                >
+                  <Shuffle size={18} />
+                  {count === 1 ? "抽一题" : `抽 ${count} 题`}
+                </button>
+                <button onClick={reset}>
+                  <RotateCcw size={16} />
+                  重新开始
+                </button>
+              </div>
             </div>
-          </div>
-        </Panel>
-        <section className="panel draw-panel">
-          <div className="eyebrow">YOUR NEXT CHALLENGE</div>
-          <h2>这次，就做这些</h2>
-          <div className="draw-results">
-            {result.length ? (
-              result.map((r, i) => <span key={i}>{r}</span>)
-            ) : (
-              <span className="draw-placeholder">?</span>
-            )}
-          </div>
-          <p className="muted">
-            已抽 {drawn} 项 ·{" "}
-            {pool === null
-              ? "题池尚未开始"
-              : unique
-                ? `剩余 ${pool.length} / ${initial} 项`
-                : `可选 ${initial} 项（允许重复）`}
-          </p>
-          <button
-            disabled={!result.length}
-            onClick={() =>
-              void copy(result.join("\n"))
-                .then(() => toast("结果已复制"))
-                .catch((e) => toast(String(e)))
-            }
-          >
-            <Copy size={16} />
-            复制结果
-          </button>
-        </section>
-      </div>
+          </Panel>
+          <section className="panel draw-panel">
+            <h2>抽取结果</h2>
+            <div className="draw-results">
+              {result.length ? (
+                result.map((r, i) => <span key={i}>{r}</span>)
+              ) : (
+                <span className="draw-placeholder">?</span>
+              )}
+            </div>
+            <p className="muted">
+              已抽 {drawn} 项 ·{" "}
+              {pool === null
+                ? "输入题号或题目后开始抽取"
+                : unique
+                  ? `剩余 ${pool.length} / ${initial} 项`
+                  : `可选 ${initial} 项（允许重复）`}
+            </p>
+            <button
+              disabled={!result.length}
+              onClick={() =>
+                void copy(result.join("\n"))
+                  .then(() => toast("结果已复制"))
+                  .catch((e) => toast(String(e)))
+              }
+            >
+              <Copy size={16} />
+              复制结果
+            </button>
+          </section>
+        </div>
+      )}
     </>
   );
 }

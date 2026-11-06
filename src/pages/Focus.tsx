@@ -231,7 +231,7 @@ export default function Focus() {
             )}
           </div>
           <p className="footnote">
-            以真实时间戳计时。后台计时可能包含离开屏幕的时间，请按实际情况暂停。跨日记录归入开始日期。
+            离开时请暂停，结束后保存记录。
           </p>
           <button
             className="text-button"

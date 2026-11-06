@@ -14,6 +14,7 @@ import {
   Settings,
   Database,
   Info,
+  UserRound,
 } from "lucide-react";
 export const tools = [
   {
@@ -116,6 +117,13 @@ export const tools = [
     icon: Database,
     group: "设置",
     keywords: "导出 导入 JSON",
+  },
+  {
+    id: "author",
+    name: "作者",
+    icon: UserRound,
+    group: "设置",
+    keywords: "作者 suducat GitHub 微信 联系方式 反馈",
   },
   {
     id: "about",

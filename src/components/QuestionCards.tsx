@@ -18,7 +18,7 @@ export function QuestionCards() {
   const lock = useRef(false);
   const item = bank.find((x) => x.id === current);
   return (
-    <Panel title="题目卡 · 题目与答案一起保存">
+    <Panel title="我的题库">
       {(data.preferences.legacyQuestions ?? []).some((s) => s.trim()) && (
         <button
           onClick={async () => {
@@ -45,6 +45,7 @@ export function QuestionCards() {
           将已保存列表转为题目卡
         </button>
       )}
+      {!bank.length && <p>添加题目和答案，随时抽一题复习。</p>}
       <div className="inline">
         <button
           onClick={() => {
@@ -70,7 +71,7 @@ export function QuestionCards() {
             }
           }}
         >
-          抽下一题
+          {current ? "下一题" : "开始抽题"}
         </button>
         <button
           onClick={() => {
@@ -79,12 +80,11 @@ export function QuestionCards() {
             setShow(false);
           }}
         >
-          重置卡片题池
+          重新开始
         </button>
       </div>
       <p>
         已抽 {used.length} · 剩余 {bank.length - used.length}
-        。下方题号／列表模式保持独立。
       </p>
       {item && (
         <>
@@ -98,7 +98,7 @@ export function QuestionCards() {
         </>
       )}
       <details>
-        <summary>管理已保存题目（{bank.length}）</summary>
+        <summary>题目列表（{bank.length}）</summary>
         {bank.map((q) => (
           <div className="list-row" key={q.id}>
             <span>{q.question.slice(0, 60)}</span>

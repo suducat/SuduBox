@@ -1,5 +1,5 @@
+import { showGuide } from "../components/Onboarding";
 import { SafeForm } from "../components/SafeForm";
-import { Feedback } from "../components/RoundTwo";
 import { useState, useEffect } from "react";
 import {
   Download,
@@ -26,6 +26,9 @@ export function Preferences() {
         description="让速度工具箱更适合你的学习习惯。"
       />
       <div className="settings-stack">
+        <Panel title="新手向导">
+          <button onClick={showGuide}>重新查看使用向导</button>
+        </Panel>
         <Panel title="首页提示">
           <button
             onClick={() => {
@@ -132,15 +135,14 @@ export function Preferences() {
           </SafeForm>
           <div className="callout">
             <strong>固定每周课表</strong>
-            <p>第一版支持周一至周日固定课程。A/B Day 与单双周课表敬请期待。</p>
+            <p>支持固定每周课表，暂不支持单双周。</p>
           </div>
         </Panel>
         <Panel title="数据保存在这里">
           <div className="inline">
             <ShieldCheck size={24} />
             <p>
-              所有记录保存在当前浏览器的 IndexedDB
-              中，不会上传服务器。更换设备、清除网站数据或隐私浏览可能导致记录丢失。
+              记录保存在当前设备。更换设备或清除网站数据前，请先备份。
             </p>
           </div>
           <a className="button" href="#/backup">
@@ -305,6 +307,10 @@ function OfflineStatus() {
       : "正在检查本设备的离线缓存…",
   );
   useEffect(() => {
+    if ("__TAURI_INTERNALS__" in window) {
+      setStatus("桌面资源已就绪，可离线使用");
+      return;
+    }
     if (import.meta.env.DEV) return;
     if (!("serviceWorker" in navigator)) {
       setStatus("此浏览器暂不支持 Service Worker，网页功能仍可正常使用。");
@@ -344,34 +350,14 @@ export function About() {
           速度工具箱 <span className="badge">v1.0.0</span>
         </h2>
         <p>为中国国际高中学生打造的轻量学习效率工具箱。</p>
-        <p>
-          打开即用，无需登录。把课表、笔记、考试与专注放在一个安静的空间里。
-        </p>
-        <div className="about-values">
-          <span>简单</span>
-          <span>轻便</span>
-          <span>实用</span>
-          <span>本地优先</span>
-        </div>
+        <a className="button" href="#/author">
+          作者与联系方式
+        </a>
         <hr />
-        <Feedback />
-        <h3>你的数据，由你掌握</h3>
-        <p>
-          无需服务器、账号、数据库服务或 AI
-          API。学习记录只存在当前浏览器；清除网站数据或更换设备可能丢失记录，请定期备份。
-        </p>
-        <h3>随时打开，安心使用</h3>
+        <h3>数据保存</h3>
+        <p>记录保存在当前设备。清除网站数据或更换设备前，请先导出备份。</p>
+        <a href="#/backup">导出或恢复备份</a>
         <OfflineStatus />
-        <p>
-          所有必要资源随应用打包，无运行时字体或海外 CDN。HTTPS 或 localhost
-          下可启用
-          PWA；首次成功加载并缓存后，已实现工具可离线使用。浏览器可能回收离线缓存，首次使用仍需联网。
-        </p>
-        <h3>关于公式与规划功能</h3>
-        <p>
-          公式表为精选学习参考，不能替代课程教材。GPA、文件转换与 AI
-          检测尚未实现，相关限制在各页面清晰说明。
-        </p>
       </section>
     </>
   );
@@ -387,28 +373,25 @@ const planned: Record<
       "按学校配置 GPA 转换规则",
       "自定义加权与目标 GPA 模拟",
     ],
-    notice:
-      "GPA 依赖学校官方规则，当前尚未核实，因此本版本不输出所谓真实 GPA。未来规则将作为独立配置模块接入。",
+    notice: "GPA 换算需以学校官方规则为准。",
   },
   files: {
-    desc: "常见学习文件，一站整理。先把可靠性做好。",
+    desc: "整理常用学习文件。",
     items: [
       "图片转 PDF、PDF 转图片",
       "PDF 合并、拆分与页面重排",
       "研究 PPTX 与 PDF 转换的可行性",
     ],
-    notice:
-      "第一版不执行文件转换。未来优先实现本地图片与 PDF 处理；不承诺 PPTX 与 PDF 无损双向转换。",
+    notice: "",
   },
   ai: {
-    desc: "谨慎理解文本检测，让判断回到证据。",
+    desc: "了解文本检测。",
     items: [
       "研究第三方检测服务的适用范围",
       "展示检测依据与不确定性",
       "提供清晰的隐私与误判风险说明",
     ],
-    notice:
-      "AI 生成文本检测具有误判风险，不能作为学术不端认定的唯一证据。当前不调用任何 AI 服务，不收集或上传作文，也不提供虚构的 AI 率。",
+    notice: "AI 检测可能误判，不能单独用来认定学术不端。",
   },
 };
 export function ComingSoon({ id }: { id: string }) {
@@ -417,9 +400,9 @@ export function ComingSoon({ id }: { id: string }) {
   const Icon = item.icon;
   return (
     <>
-      <PageHead title={item.name} description="好工具，值得认真打磨。" />
+      <PageHead title={item.name} />
       <section className="panel coming-soon">
-        <span className="badge">规划中 · 敬请期待</span>
+        <span className="badge">敬请期待</span>
         <div className="soon-icon">
           <Icon size={38} />
         </div>
@@ -434,10 +417,7 @@ export function ComingSoon({ id }: { id: string }) {
             </p>
           ))}
         </div>
-        <div className="callout">
-          <p>{p.notice}</p>
-        </div>
-        <p className="footnote">当前状态：需求研究中。暂未提供上线日期。</p>
+        {p.notice && <p className="muted">{p.notice}</p>}
         <a className="button primary" href="#/tools">
           <ArrowLeft size={16} />
           返回工具中心

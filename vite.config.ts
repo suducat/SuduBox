@@ -14,6 +14,7 @@ function offlineShell(): Plugin {
         "icon-192.png",
         "icon-512.png",
         "manifest.webmanifest",
+        "author-suducat.png",
       ];
       const version = `sudubox-${Date.now()}`;
       const source = `

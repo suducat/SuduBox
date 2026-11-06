@@ -2,143 +2,73 @@ import presets from "../data/aip-presets";
 import { schoolState } from "../utils/school";
 import { SpecialDays } from "./SpecialDays";
 import { AipImport } from "./AipImport";
-import { useState } from "react";
 import { useStore } from "./context";
-import { Panel, Modal } from "./UI";
-import { copy } from "../utils/logic";
-export function Feedback() {
-  const [open, setOpen] = useState(false);
-  const { toast } = useStore();
-  return (
-    <>
-      <button onClick={() => setOpen(true)}>问题反馈</button>
-      {open && (
-        <Modal title="问题反馈" close={() => setOpen(false)}>
-          <p>添加微信时请备注‘速度工具箱反馈’。</p>
-          <input
-            aria-label="反馈微信号，可手动选择复制"
-            readOnly
-            value="Alex_AAj"
-            onFocus={(e) => e.target.select()}
-          />
-          <button
-            onClick={() =>
-              void copy("Alex_AAj")
-                .then(() => toast("微信号已复制"))
-                .catch(() => toast("无法使用剪贴板，请选中微信号手动复制"))
-            }
-          >
-            复制微信号
-          </button>
-          <p>
-            可以描述问题、操作步骤、设备及浏览器。截图由你决定，不会自动上传任何学习数据。
-          </p>
-        </Modal>
-      )}
-    </>
-  );
-}
+import { Panel } from "./UI";
 export function SchoolSetup() {
   const { data, update, toast } = useStore();
   const p = data.preferences;
+  const selectedGroup = p.aipGroup?.startsWith("212 B")
+    ? "212B"
+    : presets.some((item) => item.id === p.aipGroup)
+      ? p.aipGroup
+      : p.aipGroup?.slice(0, 3);
   return (
-    <Panel title="AIP 身份与作息">
-      <label>
-        是否为 AIP 学生
-        <select
-          value={p.aipIdentity ?? ""}
-          onChange={(e) => {
-            const inputValue = e.target.value;
-
-            return void update((d) => ({
-              ...d,
-              preferences: {
-                ...d.preferences,
-                aipIdentity: inputValue as "yes" | "no" | "",
-              },
-            }));
-          }}
-        >
-          <option value="">请选择身份</option>
-          <option value="yes">是</option>
-          <option value="no">否，使用手动课表</option>
-        </select>
-      </label>
-      {p.aipIdentity === "yes" && (
-        <div className="form">
-          <label>
-            年级
-            <select
-              value={
-                p.aipGrade?.startsWith("高二")
-                  ? "高二（原表 S2）"
-                  : (p.aipGrade ?? "")
-              }
-              onChange={(e) => {
-                const inputValue = e.target.value;
-
-                return void update((d) => ({
+    <Panel title="选择你的班级">
+      <fieldset className="choice-fieldset">
+        <legend>年级</legend>
+        <div className="choice-buttons">
+          {["高一", "高二", "高三"].map((grade) => (
+            <button
+              key={grade}
+              aria-pressed={p.aipGrade?.startsWith(grade) ?? false}
+              onClick={() =>
+                void update((d) => ({
                   ...d,
                   preferences: {
                     ...d.preferences,
-                    aipGrade: inputValue,
+                    aipIdentity: "yes",
+                    aipGrade: grade,
                     aipGroup: "",
                   },
-                }));
-              }}
+                }))
+              }
             >
-              <option value="">请选择年级</option>
-              <option>高一</option>
-              <option>高二（原表 S2）</option>
-              <option>高三</option>
-            </select>
-          </label>
-          {p.aipGrade ? (
-            <>
-              <label>
-                班级／分组
-                <select
-                  value={
-                    p.aipGroup?.startsWith("212 B")
-                      ? "212B"
-                      : presets.some((x) => x.id === p.aipGroup)
-                        ? p.aipGroup
-                        : (p.aipGroup?.slice(0, 3) ?? "")
-                  }
-                  onChange={(e) => {
-                    const inputValue = e.target.value;
-
-                    return void update((d) => ({
+              {grade}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+      {p.aipGrade && (
+        <fieldset className="choice-fieldset">
+          <legend>班级</legend>
+          <div className="choice-buttons">
+            {presets
+              .filter(
+                (item) =>
+                  item.grade ===
+                  (p.aipGrade?.startsWith("高二") ? "高二" : p.aipGrade),
+              )
+              .map((item) => (
+                <button
+                  key={item.id}
+                  aria-pressed={selectedGroup === item.id}
+                  onClick={() =>
+                    void update((d) => ({
                       ...d,
-                      preferences: {
-                        ...d.preferences,
-                        aipGroup: inputValue,
-                      },
-                    }));
-                  }}
+                      preferences: { ...d.preferences, aipGroup: item.id },
+                    }))
+                  }
                 >
-                  <option value="">请选择分组</option>
-                  {presets
-                    .filter(
-                      (preset) =>
-                        preset.grade ===
-                        (p.aipGrade?.startsWith("高二") ? "高二" : p.aipGrade),
-                    )
-                    .map((preset) => (
-                      <option key={preset.id} value={preset.id}>
-                        {preset.id}
-                      </option>
-                    ))}
-                </select>
-              </label>
-              <p>
-                按所选班级显示原表版本和课程，确认预览后导入。选修池只需选择一次。
-              </p>
-            </>
-          ) : (
-            p.aipGrade && <p>该年级课表尚未提供，可手动创建。</p>
-          )}
-          {p.aipGrade && <AipImport key={p.aipGroup} />}
+                  {item.id}
+                </button>
+              ))}
+          </div>
+        </fieldset>
+      )}
+      {p.aipGroup && <AipImport key={p.aipGroup} />}
+      <details className="school-advanced">
+        <summary>作息与特殊日期</summary>
+        <div className="form">
           <SpecialDays />
           <label>
             课表时区
@@ -160,9 +90,7 @@ export function SchoolSetup() {
               }}
             />
           </label>
-          <small>
-            使用 IANA 时区，例如 Asia/Shanghai。午休 12:10—14:10 为推导配置。
-          </small>
+          <small>国内学校填写 Asia/Shanghai。</small>
           <label className="check">
             <input
               type="checkbox"
@@ -178,7 +106,7 @@ export function SchoolSetup() {
                 }));
               }}
             />
-            启用晚自习（产品设置，非 Excel 原内容）
+            启用晚自习
           </label>
           <div className="form-grid">
             {(["eveningStart", "eveningEnd"] as const).map((k, i) => (
@@ -260,7 +188,20 @@ export function SchoolSetup() {
             检查时区
           </button>
         </div>
-      )}
+        <button
+          onClick={async () => {
+            if (
+              await update((d) => ({
+                ...d,
+                preferences: { ...d.preferences, aipIdentity: "no" },
+              }))
+            )
+              toast("已改用手动课表，现有课程保留");
+          }}
+        >
+          改用手动课表
+        </button>
+      </details>
     </Panel>
   );
 }

@@ -279,7 +279,7 @@ export default function Words() {
         />
       )}
       <p className="footnote">
-        词库导出仅导出当前筛选结果。发音使用设备语音服务，声音与可用性由浏览器决定。
+        导出当前筛选的单词。
       </p>
       {edit && (
         <Modal title="单词信息" close={() => setEdit(null)}>
