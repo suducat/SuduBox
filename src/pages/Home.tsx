@@ -1,6 +1,7 @@
+import { MusicCorner } from "../components/MusicCorner";
 import { OfficialExams } from "../components/OfficialExams";
 import { schoolState } from "../utils/school";
-import { Encouragement, SchoolStatus } from "../components/RoundTwo";
+import { SchoolStatus } from "../components/RoundTwo";
 import {
   ArrowUpRight,
   Sun,
@@ -119,7 +120,7 @@ export default function Home() {
           </div>
         </section>
       )}
-      <Encouragement />
+      <MusicCorner />
       <SchoolStatus />
       <OfficialExams home />
       <div className="dashboard-stats">

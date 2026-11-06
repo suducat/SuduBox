@@ -6,47 +6,6 @@ import { useState } from "react";
 import { useStore } from "./context";
 import { Panel, Modal } from "./UI";
 import { copy } from "../utils/logic";
-const sayings = [
-  "先完成一小步，再继续下一步。",
-  "累了可以休息，回来再接着学。",
-  "没弄懂很正常，记下来慢慢补。",
-  "听完喜欢的歌，给自己留一段专注时间。",
-  "今天多理解一点，就没有白费。",
-];
-export function Encouragement() {
-  const [hidden, hide] = useState(
-    localStorage.getItem("sudubox.hideEncouragement") === "1",
-  );
-  const [index, setIndex] = useState(() =>
-    Math.floor(Math.random() * sayings.length),
-  );
-  if (hidden) return null;
-  return (
-    <div className="status-strip">
-      <span>{sayings[index]}</span>
-      <button
-        onClick={() =>
-          setIndex(
-            (i) =>
-              (i + 1 + Math.floor(Math.random() * (sayings.length - 1))) %
-              sayings.length,
-          )
-        }
-      >
-        换一句
-      </button>
-      <button
-        aria-label="关闭鼓励语"
-        onClick={() => {
-          localStorage.setItem("sudubox.hideEncouragement", "1");
-          hide(true);
-        }}
-      >
-        关闭
-      </button>
-    </div>
-  );
-}
 export function Feedback() {
   const [open, setOpen] = useState(false);
   const { toast } = useStore();

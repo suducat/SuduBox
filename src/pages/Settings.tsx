@@ -38,10 +38,10 @@ export function Preferences() {
           <button
             onClick={() => {
               localStorage.removeItem("sudubox.hideEncouragement");
-              toast("鼓励语已恢复");
+              toast("音乐角落已恢复");
             }}
           >
-            重新显示鼓励语
+            重新显示音乐角落
           </button>
         </Panel>
 
