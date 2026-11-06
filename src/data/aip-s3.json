@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "311",
+    "version": "2026-10-08",
+    "sheet": "S3",
+    "grade": "高三",
+    "selectionRevision": 2,
+    "sourceFile": "高三课表20261008.xlsx",
+    "slots": [
+      {
+        "cell": "B4:H4",
+        "cells": {
+          "B4": "5304",
+          "D4": "AP L&C",
+          "F4": "Lesley Li"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5304\nAP L&C\nLesley Li",
+        "name": "AP L&C",
+        "room": "5304",
+        "teacher": "Lesley Li",
+        "options": []
+      },
+      {
+        "cell": "I4:N4",
+        "cells": {
+          "I4": "5209",
+          "J4": "AP Research",
+          "L4": "Nathan Crow"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5209\nAP Research\nNathan Crow",
+        "name": "AP Research",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "O4:U4",
+        "cells": {
+          "O4": "CHEM-5306-Emmanuel Akese/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "CHEM-5306-Emmanuel Akese/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "V4:Z4",
+        "cells": {
+          "V4": "5209",
+          "W4": "AP Research",
+          "X4": "Nathan Crow"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5209\nAP Research\nNathan Crow",
+        "name": "AP Research",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "AA4:AF4",
+        "cells": {
+          "AA4": "5304",
+          "AB4": "AP L&C",
+          "AD4": "Lesley Li"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5304\nAP L&C\nLesley Li",
+        "name": "AP L&C",
+        "room": "5304",
+        "teacher": "Lesley Li",
+        "options": []
+      },
+      {
+        "cell": "B5:H5",
+        "cells": {
+          "B5": "5301",
+          "D5": "Advanced Math",
+          "F5": "Netsanet Tsegaw "
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "I5:N5",
+        "cells": {
+          "I5": "PE"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O5:U5",
+        "cells": {
+          "O5": "Drama\n多功能报告厅"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V5:Z5",
+        "cells": {
+          "V5": "阶梯教室",
+          "W5": "数学",
+          "X5": "陈文河，王代彬"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n数学\n陈文河，王代彬",
+        "name": "数学",
+        "room": "阶梯教室",
+        "teacher": "陈文河，王代彬",
+        "options": []
+      },
+      {
+        "cell": "AA5:AF5",
+        "cells": {
+          "AA5": "阶梯教室",
+          "AB5": "语文",
+          "AD5": "岳强"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n语文\n岳强",
+        "name": "语文",
+        "room": "阶梯教室",
+        "teacher": "岳强",
+        "options": []
+      },
+      {
+        "cell": "B6:H6",
+        "cells": {
+          "B6": "5301",
+          "D6": "Advanced Math",
+          "F6": "Netsanet Tsegaw "
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "I6:N6",
+        "cells": {
+          "I6": "PE"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O6:U6",
+        "cells": {
+          "O6": "Drama\n多功能报告厅"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V6:Z6",
+        "cells": {
+          "V6": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "CSA (Matt Ma)【5210】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "AA6:AF6",
+        "cells": {
+          "AA6": "5209",
+          "AB6": "AP Research",
+          "AD6": "Nathan Crow"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5209\nAP Research\nNathan Crow",
+        "name": "AP Research",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "B7:H7",
+        "cells": {
+          "B7": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "CSA (Matt Ma)【5210】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "I7:N7",
+        "cells": {
+          "I7": "5603",
+          "J7": "AP BIO",
+          "M7": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5603\nAP BIO\nJeffery  Faught",
+        "name": "AP BIO",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O7:U7",
+        "cells": {
+          "O7": "SELF-STUDY"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "SELF-STUDY",
+        "name": "SELF-STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V7:Z7",
+        "cells": {
+          "V7": "5301",
+          "W7": "Advanced Math",
+          "X7": "Netsanet Tsegaw "
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "AA7:AF7",
+        "cells": {
+          "AA7": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "B8:H8",
+        "cells": {
+          "B8": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "I8:N8",
+        "cells": {
+          "I8": "SELF STUDY"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O8:U8",
+        "cells": {
+          "O8": "5209",
+          "Q8": "AP Research",
+          "S8": "Nathan Crow"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5209\nAP Research\nNathan Crow",
+        "name": "AP Research",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "V8:Z8",
+        "cells": {
+          "V8": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA8:AF8",
+        "cells": {
+          "AA8": "SELF STUDY"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B10:H10",
+        "cells": {
+          "B10": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "I10:N10",
+        "cells": {
+          "I10": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "O10:U10",
+        "cells": {
+          "O10": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "V10:Z10",
+        "cells": {
+          "V10": "5304",
+          "W10": "AP L&C",
+          "Y10": "Lesley Li"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5304\nAP L&C\nLesley Li",
+        "name": "AP L&C",
+        "room": "5304",
+        "teacher": "Lesley Li",
+        "options": []
+      },
+      {
+        "cell": "AA10:AF10",
+        "cells": {
+          "AA10": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "B11:H11",
+        "cells": {
+          "B11": "5209",
+          "D11": "AP Research",
+          "F11": "Nathan Crow"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5209\nAP Research\nNathan Crow",
+        "name": "AP Research",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "I11:N11",
+        "cells": {
+          "I11": "5603",
+          "J11": "AP BIO",
+          "M11": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5603\nAP BIO\nJeffery  Faught",
+        "name": "AP BIO",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O11:U11",
+        "cells": {
+          "O11": "5304",
+          "Q11": "AP L&C",
+          "S11": "Lesley Li"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5304\nAP L&C\nLesley Li",
+        "name": "AP L&C",
+        "room": "5304",
+        "teacher": "Lesley Li",
+        "options": []
+      },
+      {
+        "cell": "V11:Z11",
+        "cells": {
+          "V11": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "AA11:AF11",
+        "cells": {
+          "AA11": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "B12:H12",
+        "cells": {
+          "B12": "ASSEMBLY/SELF STUDY"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ASSEMBLY/SELF STUDY",
+        "name": "ASSEMBLY/SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I12:N12",
+        "cells": {
+          "I12": "5304",
+          "J12": "AP L&C",
+          "L12": "Lesley Li"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5304\nAP L&C\nLesley Li",
+        "name": "AP L&C",
+        "room": "5304",
+        "teacher": "Lesley Li",
+        "options": []
+      },
+      {
+        "cell": "O12:U12",
+        "cells": {
+          "O12": "AP MACRO-5306-Ken Su/\nCSA-5210-Matt Ma"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP MACRO-5306-Ken Su/\nCSA-5210-Matt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": ["AP MACRO (Ken Su)【5306】", "CSA (Matt Ma)【5210】"]
+      },
+      {
+        "cell": "V12:Z12",
+        "cells": {
+          "V12": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "AA12:AF12",
+        "cells": {
+          "AA12": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "I13:N13",
+        "cells": {
+          "I13": "5210",
+          "J13": "CSA",
+          "M13": "Matt Ma"
+        },
+        "day": 2,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "5210\nCSA\nMatt Ma",
+        "name": "CSA",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "O13:U13",
+        "cells": {
+          "O13": "5210",
+          "Q13": "CSA",
+          "R13": "Matt Ma"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "5210\nCSA\nMatt Ma",
+        "name": "CSA",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "312",
+    "version": "2026-10-08",
+    "sheet": "S3",
+    "grade": "高三",
+    "selectionRevision": 2,
+    "sourceFile": "高三课表20261008.xlsx",
+    "slots": [
+      {
+        "cell": "B17:H17",
+        "cells": {
+          "B17": "5301",
+          "D17": "STAT",
+          "F17": "Netsanet Tsegaw"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5301\nSTAT\nNetsanet Tsegaw",
+        "name": "STAT",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw",
+        "options": []
+      },
+      {
+        "cell": "I17:N17",
+        "cells": {
+          "I17": "5301",
+          "J17": "Advanced Math",
+          "M17": "Netsanet Tsegaw "
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "O17:U17",
+        "cells": {
+          "O17": "CHEM-5306-Emmanuel Akese/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "CHEM-5306-Emmanuel Akese/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "V17:Z17",
+        "cells": {
+          "V17": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA17:AF17",
+        "cells": {
+          "AA17": "5301",
+          "AB17": "STAT",
+          "AD17": "Netsanet Tsegaw "
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5301\nSTAT\nNetsanet Tsegaw ",
+        "name": "STAT",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "B18:H18",
+        "cells": {
+          "B18": "5201",
+          "D18": "ENG",
+          "F18": "Thomas  Leasain"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5201\nENG\nThomas  Leasain",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain",
+        "options": []
+      },
+      {
+        "cell": "I18:N18",
+        "cells": {
+          "I18": "PE"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O18:U18",
+        "cells": {
+          "O18": "5201",
+          "Q18": "ENG",
+          "R18": "Thomas  Leasain "
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "V18:Z18",
+        "cells": {
+          "V18": "阶梯教室",
+          "W18": "数学",
+          "X18": "陈文河，王代彬"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n数学\n陈文河，王代彬",
+        "name": "数学",
+        "room": "阶梯教室",
+        "teacher": "陈文河，王代彬",
+        "options": []
+      },
+      {
+        "cell": "AA18:AF18",
+        "cells": {
+          "AA18": "阶梯教室",
+          "AB18": "语文",
+          "AD18": "岳强"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n语文\n岳强",
+        "name": "语文",
+        "room": "阶梯教室",
+        "teacher": "岳强",
+        "options": []
+      },
+      {
+        "cell": "B19:H19",
+        "cells": {
+          "B19": "5201",
+          "D19": "ENG",
+          "F19": "Thomas  Leasain"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5201\nENG\nThomas  Leasain",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain",
+        "options": []
+      },
+      {
+        "cell": "I19:N19",
+        "cells": {
+          "I19": "PE"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O19:U19",
+        "cells": {
+          "O19": "5201",
+          "Q19": "ENG",
+          "R19": "Thomas  Leasain "
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "V19:Z19",
+        "cells": {
+          "V19": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "CSA (Matt Ma)【5210】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "AA19:AF19",
+        "cells": {
+          "AA19": "5301",
+          "AB19": "STAT",
+          "AD19": "Netsanet Tsegaw "
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5301\nSTAT\nNetsanet Tsegaw ",
+        "name": "STAT",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "B20:H20",
+        "cells": {
+          "B20": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "CHEM-5306-Emmanuel Akese/ CSA-5210-Matt Ma/\nHG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "CSA (Matt Ma)【5210】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "I20:N20",
+        "cells": {
+          "I20": "5603",
+          "J20": "AP BIO",
+          "M20": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5603\nAP BIO\nJeffery  Faught",
+        "name": "AP BIO",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O20:U20",
+        "cells": {
+          "O20": "Drama\n多功能报告厅"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V20:Z20",
+        "cells": {
+          "V20": "Drama\n多功能报告厅"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA20:AF20",
+        "cells": {
+          "AA20": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "B21:H21",
+        "cells": {
+          "B21": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "I21:N21",
+        "cells": {
+          "I21": "5301",
+          "J21": "Advanced Math",
+          "M21": "Netsanet Tsegaw "
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "O21:U21",
+        "cells": {
+          "O21": "Drama\n多功能报告厅"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V21:Z21",
+        "cells": {
+          "V21": "Drama\n多功能报告厅"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Drama\n多功能报告厅",
+        "name": "Drama\n多功能报告厅",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA21:AF21",
+        "cells": {
+          "AA21": "5201",
+          "AB21": "ENG",
+          "AD21": "Thomas  Leasain "
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "B23:H23",
+        "cells": {
+          "B23": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "I23:N23",
+        "cells": {
+          "I23": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "O23:U23",
+        "cells": {
+          "O23": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave\n",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "V23:Z23",
+        "cells": {
+          "V23": "5301",
+          "W23": "STAT",
+          "X23": "Netsanet Tsegaw "
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5301\nSTAT\nNetsanet Tsegaw ",
+        "name": "STAT",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "AA23:AF23",
+        "cells": {
+          "AA23": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "B24:H24",
+        "cells": {
+          "B24": "5301",
+          "D24": "Advanced Math",
+          "F24": "Netsanet Tsegaw "
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5301\nAdvanced Math\nNetsanet Tsegaw ",
+        "name": "Advanced Math",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "I24:N24",
+        "cells": {
+          "I24": "5603",
+          "J24": "Bio",
+          "M24": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5603\nBio\nJeffery  Faught",
+        "name": "Bio",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O24:U24",
+        "cells": {
+          "O24": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V24:Z24",
+        "cells": {
+          "V24": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP BIO-5603-Jeffery  Faught/\nAP MACRO-5306-Ken Su",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP BIO (Jeffery  Faught)【5603】",
+          "AP MACRO (Ken Su)【5306】"
+        ]
+      },
+      {
+        "cell": "AA24:AF24",
+        "cells": {
+          "AA24": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "B25:H25",
+        "cells": {
+          "B25": "ASSEMBLY/SELF STUDY"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ASSEMBLY/SELF STUDY",
+        "name": "ASSEMBLY/SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I25:N25",
+        "cells": {
+          "I25": "5301",
+          "J25": "STAT",
+          "M25": "Netsanet Tsegaw "
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5301\nSTAT\nNetsanet Tsegaw ",
+        "name": "STAT",
+        "room": "5301",
+        "teacher": "Netsanet Tsegaw ",
+        "options": []
+      },
+      {
+        "cell": "O25:U25",
+        "cells": {
+          "O25": "AP MACRO-5306-Ken Su/\nCSA-5210-Matt Ma"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP MACRO-5306-Ken Su/\nCSA-5210-Matt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": ["AP MACRO (Ken Su)【5306】", "CSA (Matt Ma)【5210】"]
+      },
+      {
+        "cell": "V25:Z25",
+        "cells": {
+          "V25": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP Envir.Sci-5306-Emmanuel Akese/AP PSY-5302-Dharnia Dave",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "AP Envir.Sci (Emmanuel Akese)【5306】",
+          "AP PSY (Dharnia Dave)【5302】"
+        ]
+      },
+      {
+        "cell": "AA25:AF25",
+        "cells": {
+          "AA25": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "CHEM-5306-Emmanuel Akese/HG-5207-Darren Tafft /\nAP Buisness-5310-Cash Zhang",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "CHEM (Emmanuel Akese)【5306】",
+          "HG (Darren Tafft)【5207】",
+          "AP Buisness (Cash Zhang)【5310】"
+        ]
+      },
+      {
+        "cell": "I26:N26",
+        "cells": {
+          "I26": "5210",
+          "J26": "CSA",
+          "M26": "Matt Ma"
+        },
+        "day": 2,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "5210\nCSA\nMatt Ma",
+        "name": "CSA",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "O26:U26",
+        "cells": {
+          "O26": "5210",
+          "Q26": "CSA",
+          "R26": "Matt Ma"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "5210\nCSA\nMatt Ma",
+        "name": "CSA",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "313",
+    "version": "2026-10-08",
+    "sheet": "S3",
+    "grade": "高三",
+    "selectionRevision": 2,
+    "sourceFile": "高三课表20261008.xlsx",
+    "slots": [
+      {
+        "cell": "B34:H34",
+        "cells": {
+          "B34": "5602",
+          "C34": "Further Math",
+          "F34": "Dima Shedogubov"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "I34:N34",
+        "cells": {
+          "I34": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "O34:U34",
+        "cells": {
+          "O34": "5206",
+          "P34": "BIO",
+          "R34": "Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5206\nBIO\nDejan  Suljic",
+        "name": "BIO",
+        "room": "5206",
+        "teacher": "Dejan  Suljic",
+        "options": []
+      },
+      {
+        "cell": "V34:Z34",
+        "cells": {
+          "V34": "5302",
+          "W34": "ENG",
+          "X34": "Dharnia Dave"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "AA34:AF34",
+        "cells": {
+          "AA34": "5601",
+          "AB34": "PHYS",
+          "AC34": "Anita"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5601\nPHYS\nAnita",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita",
+        "options": []
+      },
+      {
+        "cell": "B35:H35",
+        "cells": {
+          "B35": "5601",
+          "C35": "PHYS",
+          "F35": "Anita Ching"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "I35:N35",
+        "cells": {
+          "I35": "PE"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O35:U35",
+        "cells": {
+          "O35": "5302",
+          "P35": "ENG",
+          "R35": "Dharnia Dave"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "V35:Z35",
+        "cells": {
+          "V35": "阶梯教室",
+          "W35": "数学",
+          "X35": "陈文河，王代彬"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n数学\n陈文河，王代彬",
+        "name": "数学",
+        "room": "阶梯教室",
+        "teacher": "陈文河，王代彬",
+        "options": []
+      },
+      {
+        "cell": "AA35:AF35",
+        "cells": {
+          "AA35": "阶梯教室",
+          "AB35": "语文",
+          "AD35": "岳强"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n语文\n岳强",
+        "name": "语文",
+        "room": "阶梯教室",
+        "teacher": "岳强",
+        "options": []
+      },
+      {
+        "cell": "B36:H36",
+        "cells": {
+          "B36": "5601",
+          "C36": "PHYS",
+          "F36": "Anita Ching"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "I36:N36",
+        "cells": {
+          "I36": "PE"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O36:U36",
+        "cells": {
+          "O36": "5302",
+          "P36": "ENG",
+          "R36": "Dharnia Dave"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "V36:Z36",
+        "cells": {
+          "V36": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA36:AF36",
+        "cells": {
+          "AA36": "5602",
+          "AB36": "Further Math",
+          "AC36": "Dima Shedogubov"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "B37:H37",
+        "cells": {
+          "B37": "SELF STUDY"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I37:N37",
+        "cells": {
+          "I37": "5601",
+          "J37": "PHYS",
+          "L37": "Anita Ching"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "O37:U37",
+        "cells": {
+          "O37": "5602",
+          "P37": "Further Math",
+          "R37": "Dima Shedogubov"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "V37:Z37",
+        "cells": {
+          "V37": "5601",
+          "W37": "PHYS",
+          "X37": "Anita Ching"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "AA37:AF37",
+        "cells": {
+          "AA37": "5602",
+          "AB37": "Further Math",
+          "AC37": "Dima Shedogubov"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "B38:H38",
+        "cells": {
+          "B38": "5302",
+          "C38": "ENG",
+          "F38": "Dharnia Dave"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "I38:N38",
+        "cells": {
+          "I38": "5202",
+          "J38": "CHEM",
+          "L38": "Felix  Ampah"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "O38:U38",
+        "cells": {
+          "O38": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V38:Z38",
+        "cells": {
+          "V38": "5202",
+          "W38": "CHEM",
+          "X38": "Felix  Ampah"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "AA38:AF38",
+        "cells": {
+          "AA38": "5202",
+          "AB38": "CHEM",
+          "AC38": "Felix  Ampah"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "B40:H40",
+        "cells": {
+          "B40": "5202",
+          "C40": "CHEM",
+          "F40": "Felix  Ampah"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "I40:N40",
+        "cells": {
+          "I40": "5602",
+          "J40": "Further Math",
+          "L40": "Dima Shedogubov"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "O40:U40",
+        "cells": {
+          "O40": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V40:Z40",
+        "cells": {
+          "V40": "5601",
+          "W40": "PHYS",
+          "X40": "Anita Ching"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "AA40:AF40",
+        "cells": {
+          "AA40": "5202",
+          "AB40": "CHEM",
+          "AC40": "Felix  Ampah"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "B41:H41",
+        "cells": {
+          "B41": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "I41:N41",
+        "cells": {
+          "I41": "5207",
+          "J41": "ECON",
+          "L41": "Kwasi Boaky e-Gy asi"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5207\nECON\nKwasi Boaky e-Gy asi",
+        "name": "ECON",
+        "room": "5207",
+        "teacher": "Kwasi Boaky e-Gy asi",
+        "options": []
+      },
+      {
+        "cell": "O41:U41",
+        "cells": {
+          "O41": "5202",
+          "P41": "CHEM",
+          "R41": "Felix  Ampah"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "V41:Z41",
+        "cells": {
+          "V41": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "AA41:AF41",
+        "cells": {
+          "AA41": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "B42:H42",
+        "cells": {
+          "B42": "ASSEMBLY/SELF STUDY"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ASSEMBLY/SELF STUDY",
+        "name": "ASSEMBLY/SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I42:N42",
+        "cells": {
+          "I42": "SELF STUDY"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O42:U42",
+        "cells": {
+          "O42": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "V42:Z42",
+        "cells": {
+          "V42": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA42:AF42",
+        "cells": {
+          "AA42": "5302",
+          "AB42": "ENG",
+          "AC42": "Dharnia Dave"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "314",
+    "version": "2026-10-08",
+    "sheet": "S3",
+    "grade": "高三",
+    "selectionRevision": 2,
+    "sourceFile": "高三课表20261008.xlsx",
+    "slots": [
+      {
+        "cell": "B52:H52",
+        "cells": {
+          "B52": "5601",
+          "C52": "PHYS",
+          "F52": "Anita Ching"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "I52:N52",
+        "cells": {
+          "I52": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "O52:U52",
+        "cells": {
+          "O52": "5206",
+          "P52": "BIO",
+          "R52": "Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5206\nBIO\nDejan  Suljic",
+        "name": "BIO",
+        "room": "5206",
+        "teacher": "Dejan  Suljic",
+        "options": []
+      },
+      {
+        "cell": "V52:Z52",
+        "cells": {
+          "V52": "5602",
+          "W52": "Further Math",
+          "X52": "Dima Shedogubov"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "AA52:AF52",
+        "cells": {
+          "AA52": "5602",
+          "AB52": "Further Math",
+          "AC52": "Dima Shedogubov"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "B53:H53",
+        "cells": {
+          "B53": "5602",
+          "C53": "Further Math",
+          "F53": "Dima Shedogubov"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "I53:N53",
+        "cells": {
+          "I53": "PE"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O53:U53",
+        "cells": {
+          "O53": "5602",
+          "P53": "Further Math",
+          "R53": "Dima Shedogubov"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "V53:Z53",
+        "cells": {
+          "V53": "阶梯教室",
+          "W53": "数学",
+          "X53": "陈文河，王代彬"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n数学\n陈文河，王代彬",
+        "name": "数学",
+        "room": "阶梯教室",
+        "teacher": "陈文河，王代彬",
+        "options": []
+      },
+      {
+        "cell": "AA53:AF53",
+        "cells": {
+          "AA53": "阶梯教室",
+          "AB53": "语文",
+          "AD53": "岳强"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "阶梯教室\n语文\n岳强",
+        "name": "语文",
+        "room": "阶梯教室",
+        "teacher": "岳强",
+        "options": []
+      },
+      {
+        "cell": "B54:H54",
+        "cells": {
+          "B54": "5302",
+          "C54": "ENG",
+          "F54": "Dharnia Dave"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "I54:N54",
+        "cells": {
+          "I54": "PE"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O54:U54",
+        "cells": {
+          "O54": "5602",
+          "P54": "Further Math",
+          "R54": "Dima Shedogubov"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "V54:Z54",
+        "cells": {
+          "V54": "5302",
+          "W54": "ENG",
+          "X54": "Dharnia Dave"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "AA54:AF54",
+        "cells": {
+          "AA54": "5601",
+          "AB54": "PHYS",
+          "AC54": "Anita Ching"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "B55:H55",
+        "cells": {
+          "B55": "5302",
+          "C55": "ENG",
+          "F55": "Dharnia Dave"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "I55:N55",
+        "cells": {
+          "I55": "5302",
+          "J55": "ENG",
+          "L55": "Dharnia Dave"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "O55:U55",
+        "cells": {
+          "O55": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V55:Z55",
+        "cells": {
+          "V55": "5602",
+          "W55": "Further Math",
+          "X55": "Dima Shedogubov"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5602\nFurther Math\nDima Shedogubov",
+        "name": "Further Math",
+        "room": "5602",
+        "teacher": "Dima Shedogubov",
+        "options": []
+      },
+      {
+        "cell": "AA55:AF55",
+        "cells": {
+          "AA55": "5601",
+          "AB55": "PHYS",
+          "AC55": "Anita Ching"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "B56:H56",
+        "cells": {
+          "B56": "SELF STUDY"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I56:N56",
+        "cells": {
+          "I56": "5202",
+          "J56": "CHEM",
+          "L56": "Felix  Ampah"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "O56:U56",
+        "cells": {
+          "O56": "5601",
+          "P56": "PHYS",
+          "S56": "Anita Ching"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "V56:Z56",
+        "cells": {
+          "V56": "5202",
+          "W56": "CHEM",
+          "X56": "Felix  Ampah"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "AA56:AF56",
+        "cells": {
+          "AA56": "5202",
+          "AB56": "CHEM",
+          "AC56": "Felix  Ampah"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "B58:H58",
+        "cells": {
+          "B58": "5202",
+          "C58": "CHEM",
+          "F58": "Felix  Ampah"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "I58:N58",
+        "cells": {
+          "I58": "SELF STUDY"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O58:U58",
+        "cells": {
+          "O58": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V58:Z58",
+        "cells": {
+          "V58": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA58:AF58",
+        "cells": {
+          "AA58": "5202",
+          "AB58": "CHEM",
+          "AC58": "Felix  Ampah"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5202\nCHEM\nFelix  Ampah",
+        "name": "CHEM",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "B59:H59",
+        "cells": {
+          "B59": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "I59:N59",
+        "cells": {
+          "I59": "5207",
+          "J59": "ECON",
+          "L59": "Kwasi Boaky e-Gy asi"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5207\nECON\nKwasi Boaky e-Gy asi",
+        "name": "ECON",
+        "room": "5207",
+        "teacher": "Kwasi Boaky e-Gy asi",
+        "options": []
+      },
+      {
+        "cell": "O59:U59",
+        "cells": {
+          "O59": "5202",
+          "P59": "CHE",
+          "R59": "Felix  Ampah"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5202\nCHE\nFelix  Ampah",
+        "name": "CHE",
+        "room": "5202",
+        "teacher": "Felix  Ampah",
+        "options": []
+      },
+      {
+        "cell": "V59:Z59",
+        "cells": {
+          "V59": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "AA59:AF59",
+        "cells": {
+          "AA59": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "B60:H60",
+        "cells": {
+          "B60": "ASSEMBLY/SELF STUDY"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ASSEMBLY/SELF STUDY",
+        "name": "ASSEMBLY/SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I60:N60",
+        "cells": {
+          "I60": "5302",
+          "J60": "ENG",
+          "L60": "Dharnia Dave"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5302\nENG\nDharnia Dave",
+        "name": "ENG",
+        "room": "5302",
+        "teacher": "Dharnia Dave",
+        "options": []
+      },
+      {
+        "cell": "O60:U60",
+        "cells": {
+          "O60": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ECON-5207-Kwasi Boakye-Gyasi/\nBIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ECON (Kwasi Boakye-Gyasi)【5207】",
+          "BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "V60:Z60",
+        "cells": {
+          "V60": "5601",
+          "W60": "PHYS",
+          "Z60": "Anita Ching"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "AA60:AF60",
+        "cells": {
+          "AA60": "5601",
+          "AB60": "PHYS",
+          "AC60": "Anita Ching"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5601\nPHYS\nAnita Ching",
+        "name": "PHYS",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      }
+    ]
+  }
+]

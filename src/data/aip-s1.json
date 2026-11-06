@@ -1,0 +1,3219 @@
+[
+  {
+    "id": "111A",
+    "version": "2026-10-28",
+    "sheet": "S1",
+    "grade": "高一",
+    "selectionRevision": 2,
+    "sourceFile": "高一课表20261028.xlsx",
+    "slots": [
+      {
+        "cell": "B5:H5",
+        "cells": {
+          "B5": "5209",
+          "D5": "Pre-AP Seminar",
+          "F5": "Nathan Crow"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5209\nPre-AP Seminar\nNathan Crow",
+        "name": "Pre-AP Seminar",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "I5:N5",
+        "cells": {
+          "I5": "5310",
+          "K5": "AP Microeconomics",
+          "M5": "Cash Zhang"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "O5:U5",
+        "cells": {
+          "O5": "5210",
+          "Q5": "AP Phy 1",
+          "S5": "Matt Ma"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5210\nAP Phy 1\nMatt Ma",
+        "name": "AP Phy 1",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "V5:Z5",
+        "cells": {
+          "V5": "5310",
+          "W5": "AP Microeconomics",
+          "Z5": "Cash Zhang"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "AA5:AF5",
+        "cells": {
+          "AA5": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B6:H6",
+        "cells": {
+          "B6": "PE"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I6:N6",
+        "cells": {
+          "I6": "5311",
+          "K6": "AP CAL BC",
+          "M6": "Ryan Pittman"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "O6:U6",
+        "cells": {
+          "O6": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "V6:Z6",
+        "cells": {
+          "V6": "5209",
+          "W6": "Pre-AP Seminar",
+          "Z6": "Nathan Crow"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5209\nPre-AP Seminar\nNathan Crow",
+        "name": "Pre-AP Seminar",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "AA6:AF6",
+        "cells": {
+          "AA6": "5311",
+          "AB6": "AP CAL BC",
+          "AE6": "Ryan Pittman"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "B7:H7",
+        "cells": {
+          "B7": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "I7:N7",
+        "cells": {
+          "I7": "语文\n岳强\n阶梯教室"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O7:U7",
+        "cells": {
+          "O7": "语文\n岳强\n阶梯教室"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V7:Z7",
+        "cells": {
+          "V7": "5209",
+          "W7": "Pre-AP Seminar",
+          "Z7": "Nathan Crow"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5209\nPre-AP Seminar\nNathan Crow",
+        "name": "Pre-AP Seminar",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "AA7:AF7",
+        "cells": {
+          "AA7": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "name": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B8:H8",
+        "cells": {
+          "B8": "SELF STUDY"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I8:N8",
+        "cells": {
+          "I8": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O8:U8",
+        "cells": {
+          "O8": "PE"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V8:Z8",
+        "cells": {
+          "V8": "物理\n吴学柱\n阶梯教室"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "物理\n吴学柱\n阶梯教室",
+        "name": "物理\n吴学柱\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA8:AF8",
+        "cells": {
+          "AA8": "5210",
+          "AB8": "AP Phy 1",
+          "AE8": "Matt Ma"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5210\nAP Phy 1\nMatt Ma",
+        "name": "AP Phy 1",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "B9:H9",
+        "cells": {
+          "B9": "5311",
+          "D9": "AP CAL BC",
+          "F9": "Ryan Pittman"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "I9:N9",
+        "cells": {
+          "I9": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "O9:U9",
+        "cells": {
+          "O9": "5310",
+          "Q9": "AP Microeconomics",
+          "S9": "Cash Zhang"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "V9:Z9",
+        "cells": {
+          "V9": "5311",
+          "W9": "AP CAL BC",
+          "Z9": "Ryan Pittman"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "AA9:AF9",
+        "cells": {
+          "AA9": "5204",
+          "AB9": "Pre-AP World History",
+          "AE9": "Travis Walker , Darren Tafft "
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5204\nPre-AP World History\nTravis Walker , Darren Tafft ",
+        "name": "Pre-AP World History",
+        "room": "5204",
+        "teacher": "Travis Walker , Darren Tafft ",
+        "options": []
+      },
+      {
+        "cell": "B11:H11",
+        "cells": {
+          "B11": "5210",
+          "D11": "AP Phy 1",
+          "F11": "Matt Ma"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5210\nAP Phy 1\nMatt Ma",
+        "name": "AP Phy 1",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "I11:N11",
+        "cells": {
+          "I11": "5310",
+          "K11": "AP Microeconomics",
+          "M11": "Cash Zhang"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "O11:U11",
+        "cells": {
+          "O11": "5311",
+          "Q11": "AP CAL BC",
+          "S11": "Ryan Pittman"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "V11:Z11",
+        "cells": {
+          "V11": "生物\n蔡涛\n阶梯教室"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "生物\n蔡涛\n阶梯教室",
+        "name": "生物\n蔡涛\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA11:AF11",
+        "cells": {
+          "AA11": "化学\n于福民\n阶梯教室"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "化学\n于福民\n阶梯教室",
+        "name": "化学\n于福民\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B12:H12",
+        "cells": {
+          "B12": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "name": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I12:N12",
+        "cells": {
+          "I12": "5209",
+          "K12": "Pre-AP Seminar",
+          "M12": "Nathan Crow"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5209\nPre-AP Seminar\nNathan Crow",
+        "name": "Pre-AP Seminar",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "O12:U12",
+        "cells": {
+          "O12": "5209",
+          "Q12": "Pre-AP Seminar",
+          "S12": "Nathan Crow"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5209\nPre-AP Seminar\nNathan Crow",
+        "name": "Pre-AP Seminar",
+        "room": "5209",
+        "teacher": "Nathan Crow",
+        "options": []
+      },
+      {
+        "cell": "V12:Z12",
+        "cells": {
+          "V12": "5210",
+          "W12": "AP Phy 1",
+          "Z12": "Matt Ma"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5210\nAP Phy 1\nMatt Ma",
+        "name": "AP Phy 1",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "AA12:AF12",
+        "cells": {
+          "AA12": "5210",
+          "AB12": "AP Phy 1",
+          "AE12": "Matt Ma"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5210\nAP Phy 1\nMatt Ma",
+        "name": "AP Phy 1",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "B13:H13",
+        "cells": {
+          "B13": "Assembly/Service Project"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Service Project",
+        "name": "Assembly/Service Project",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I13:N13",
+        "cells": {
+          "I13": "5204",
+          "K13": "Pre-AP World History",
+          "M13": "Travis Walker , Darren Tafft "
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5204\nPre-AP World History\nTravis Walker , Darren Tafft ",
+        "name": "Pre-AP World History",
+        "room": "5204",
+        "teacher": "Travis Walker , Darren Tafft ",
+        "options": []
+      },
+      {
+        "cell": "O13:U13",
+        "cells": {
+          "O13": "5204",
+          "Q13": "Pre-AP World History",
+          "S13": "Travis Walker , Darren Tafft "
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5204\nPre-AP World History\nTravis Walker , Darren Tafft ",
+        "name": "Pre-AP World History",
+        "room": "5204",
+        "teacher": "Travis Walker , Darren Tafft ",
+        "options": []
+      },
+      {
+        "cell": "V13:Z13",
+        "cells": {
+          "V13": "5310, 5210, 5201",
+          "W13": "Counselling"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5310, 5210, 5201\nCounselling",
+        "name": "Counselling",
+        "room": "5310, 5210, 5201",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA13:AF13",
+        "cells": {
+          "AA13": "SELF STUDY"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "111B",
+    "version": "2026-10-28",
+    "sheet": "S1",
+    "grade": "高一",
+    "selectionRevision": 2,
+    "sourceFile": "高一课表20261028.xlsx",
+    "slots": [
+      {
+        "cell": "B17:H17",
+        "cells": {
+          "B17": "SELF STUDY"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I17:N17",
+        "cells": {
+          "I17": "5310",
+          "K17": "AP Microeconomics",
+          "M17": "Cash Zhang"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "O17:U17",
+        "cells": {
+          "O17": "5601",
+          "P17": "AP PHY1&2",
+          "U17": "Anita Ching"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "V17:Z17",
+        "cells": {
+          "V17": "5310",
+          "W17": "AP Microeconomics",
+          "Y17": "Cash Zhang"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "AA17:AF17",
+        "cells": {
+          "AA17": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B18:H18",
+        "cells": {
+          "B18": "PE"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I18:N18",
+        "cells": {
+          "I18": "5311",
+          "K18": "AP CAL BC",
+          "M18": "Ryan Pittman"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "O18:U18",
+        "cells": {
+          "O18": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "V18:Z18",
+        "cells": {
+          "V18": "5601",
+          "W18": "AP PHY1&2",
+          "Z18": "Anita Ching"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "AA18:AF18",
+        "cells": {
+          "AA18": "5311",
+          "AB18": "AP CAL BC",
+          "AF18": "Ryan Pittman"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "B19:H19",
+        "cells": {
+          "B19": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "I19:N19",
+        "cells": {
+          "I19": "语文\n岳强\n阶梯教室"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O19:U19",
+        "cells": {
+          "O19": "语文\n岳强\n阶梯教室"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V19:Z19",
+        "cells": {
+          "V19": "5601",
+          "W19": "AP PHY1&2",
+          "Z19": "Anita Ching"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "AA19:AF19",
+        "cells": {
+          "AA19": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "name": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B20:H20",
+        "cells": {
+          "B20": "5204",
+          "D20": "ENG",
+          "G20": "Travis Walker"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5204\nENG\nTravis Walker",
+        "name": "ENG",
+        "room": "5204",
+        "teacher": "Travis Walker",
+        "options": []
+      },
+      {
+        "cell": "I20:N20",
+        "cells": {
+          "I20": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O20:U20",
+        "cells": {
+          "O20": "PE"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V20:Z20",
+        "cells": {
+          "V20": "物理\n吴学柱\n阶梯教室"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "物理\n吴学柱\n阶梯教室",
+        "name": "物理\n吴学柱\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA20:AF20",
+        "cells": {
+          "AA20": "SELF STUDY"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B21:H21",
+        "cells": {
+          "B21": "5311",
+          "D21": "AP CAL BC",
+          "G21": "Ryan Pittman"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "I21:N21",
+        "cells": {
+          "I21": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Pre-AP BIO-5603-Jeffery  Faught/\nPre-AP CHEM-5306-Emmanuel  Akese",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】"
+        ]
+      },
+      {
+        "cell": "O21:U21",
+        "cells": {
+          "O21": "5310",
+          "P21": "AP Microeconomics",
+          "U21": "Cash Zhang"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "V21:Z21",
+        "cells": {
+          "V21": "5311",
+          "W21": "AP CAL BC",
+          "Z21": "Ryan Pittman"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "AA21:AF21",
+        "cells": {
+          "AA21": "SELF STUDY"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B23:H23",
+        "cells": {
+          "B23": "5204",
+          "D23": "ENG",
+          "G23": "Travis Walker"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5204\nENG\nTravis Walker",
+        "name": "ENG",
+        "room": "5204",
+        "teacher": "Travis Walker",
+        "options": []
+      },
+      {
+        "cell": "I23:N23",
+        "cells": {
+          "I23": "5310",
+          "K23": "AP Microeconomics",
+          "M23": "Cash Zhang"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "O23:U23",
+        "cells": {
+          "O23": "5311",
+          "P23": "AP CAL BC",
+          "U23": "Ryan Pittman"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5311\nAP CAL BC\nRyan Pittman",
+        "name": "AP CAL BC",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "V23:Z23",
+        "cells": {
+          "V23": "生物\n蔡涛\n阶梯教室"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "生物\n蔡涛\n阶梯教室",
+        "name": "生物\n蔡涛\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA23:AF23",
+        "cells": {
+          "AA23": "化学\n于福民\n阶梯教室"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "化学\n于福民\n阶梯教室",
+        "name": "化学\n于福民\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B24:H24",
+        "cells": {
+          "B24": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "name": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I24:N24",
+        "cells": {
+          "I24": "5601",
+          "K24": "AP PHY1&2",
+          "N24": "Anita Ching"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "O24:U24",
+        "cells": {
+          "O24": "5601",
+          "P24": "AP PHY1&2",
+          "U24": "Anita Ching"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "V24:Z24",
+        "cells": {
+          "V24": "5204",
+          "W24": "ENG",
+          "Z24": "Travis Walker"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5204\nENG\nTravis Walker",
+        "name": "ENG",
+        "room": "5204",
+        "teacher": "Travis Walker",
+        "options": []
+      },
+      {
+        "cell": "AA24:AF24",
+        "cells": {
+          "AA24": "5204",
+          "AB24": "ENG",
+          "AF24": "Travis Walker"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5204\nENG\nTravis Walker",
+        "name": "ENG",
+        "room": "5204",
+        "teacher": "Travis Walker",
+        "options": []
+      },
+      {
+        "cell": "B25:H25",
+        "cells": {
+          "B25": "Assembly/Service Project"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Service Project",
+        "name": "Assembly/Service Project",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I25:N25",
+        "cells": {
+          "I25": "5601",
+          "K25": "AP PHY1&2",
+          "N25": "Anita Ching"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5601\nAP PHY1&2\nAnita Ching",
+        "name": "AP PHY1&2",
+        "room": "5601",
+        "teacher": "Anita Ching",
+        "options": []
+      },
+      {
+        "cell": "O25:U25",
+        "cells": {
+          "P25": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      },
+      {
+        "cell": "V25:Z25",
+        "cells": {
+          "V25": "5310, 5210, 5201",
+          "W25": "Counselling"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5310, 5210, 5201\nCounselling",
+        "name": "Counselling",
+        "room": "5310, 5210, 5201",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA25:AF25",
+        "cells": {
+          "AA25": "5204",
+          "AB25": "ENG",
+          "AF25": "Travis Walker"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5204\nENG\nTravis Walker",
+        "name": "ENG",
+        "room": "5204",
+        "teacher": "Travis Walker",
+        "options": []
+      },
+      {
+        "cell": "O26:U26",
+        "cells": {
+          "P26": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "version": "2026-10-28",
+    "sheet": "S1",
+    "grade": "高一",
+    "selectionRevision": 2,
+    "sourceFile": "高一课表20261028.xlsx",
+    "slots": [
+      {
+        "cell": "B30:H30",
+        "cells": {
+          "B30": "5310",
+          "D30": "AP Microeconomics",
+          "H30": "Cash Zhang"
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "I30:N30",
+        "cells": {
+          "I30": "5210",
+          "K30": "AP Phy 1 Group A",
+          "M30": "Matt Ma"
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5210\nAP Phy 1 Group A\nMatt Ma",
+        "name": "AP Phy 1 Group A",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "O30:U30",
+        "cells": {
+          "O30": "5311",
+          "P30": "Pre_AP Cal",
+          "U30": "Ryan Pittman"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5311\nPre_AP Cal\nRyan Pittman",
+        "name": "Pre_AP Cal",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "V30:Z30",
+        "cells": {
+          "W30": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210",
+          "Y30": "Emmanuel  Akese,\nMatt Ma"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210\nEmmanuel  Akese,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】",
+          "AP Phy 1 Group B (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "AA30:AF30",
+        "cells": {
+          "AA30": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B31:H31",
+        "cells": {
+          "B31": "PE"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I31:N31",
+        "cells": {
+          "I31": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5209-Darren Tafft"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5209-Darren Tafft",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ENG Group A (Thomas  Leasain)【5201】",
+          "ENG Group B (Darren Tafft)【5209】"
+        ]
+      },
+      {
+        "cell": "O31:U31",
+        "cells": {
+          "P31": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210",
+          "U31": "Jeffery  Faught,\nMatt Ma"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210\nJeffery  Faught,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "AP Phy 1 Group A (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "V31:Z31",
+        "cells": {
+          "V31": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5602-Darren Tafft"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5602-Darren Tafft",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ENG Group A (Thomas  Leasain)【5201】",
+          "ENG Group B (Darren Tafft)【5602】"
+        ]
+      },
+      {
+        "cell": "AA31:AF31",
+        "cells": {
+          "AA31": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5306-Darren Tafft"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5306-Darren Tafft",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ENG Group A (Thomas  Leasain)【5201】",
+          "ENG Group B (Darren Tafft)【5306】"
+        ]
+      },
+      {
+        "cell": "B32:H32",
+        "cells": {
+          "D32": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210",
+          "H32": "Jeffery  Faught,\nMatt Ma"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210\nJeffery  Faught,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "AP Phy 1 Group A (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "I32:N32",
+        "cells": {
+          "I32": "语文\n岳强\n阶梯教室"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O32:U32",
+        "cells": {
+          "O32": "语文\n岳强\n阶梯教室"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V32:Z32",
+        "cells": {
+          "V32": "5311",
+          "W32": "Pre_AP Cal",
+          "Y32": "Ryan Pittman"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "5311\nPre_AP Cal\nRyan Pittman",
+        "name": "Pre_AP Cal",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "AA32:AF32",
+        "cells": {
+          "AA32": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "name": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B33:H33",
+        "cells": {
+          "B33": "5311",
+          "D33": "Pre_AP Calculus",
+          "H33": "Ryan Pittman"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5311\nPre_AP Calculus\nRyan Pittman",
+        "name": "Pre_AP Calculus",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "I33:N33",
+        "cells": {
+          "I33": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O33:U33",
+        "cells": {
+          "O33": "PE"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V33:Z33",
+        "cells": {
+          "V33": "物理\n吴学柱\n阶梯教室"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "物理\n吴学柱\n阶梯教室",
+        "name": "物理\n吴学柱\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA33:AF33",
+        "cells": {
+          "AA33": "5311",
+          "AB33": "Pre_AP Calculus",
+          "AE33": "Ryan Pittman"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5311\nPre_AP Calculus\nRyan Pittman",
+        "name": "Pre_AP Calculus",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "B34:H34",
+        "cells": {
+          "B34": "5210",
+          "D34": "AP Phy 1 Group B",
+          "H34": "Matt Ma"
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5210\nAP Phy 1 Group B\nMatt Ma",
+        "name": "AP Phy 1 Group B",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "I34:N34",
+        "cells": {
+          "K34": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210",
+          "M34": "Jeffery  Faught,\nMatt Ma"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Pre-AP BIO-5603\nAP Phy 1 Group A-5210\nJeffery  Faught,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP BIO (Jeffery  Faught)【5603】",
+          "AP Phy 1 Group A (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "O34:U34",
+        "cells": {
+          "O34": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5204-Darren Tafft"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5204-Darren Tafft",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ENG Group A (Thomas  Leasain)【5201】",
+          "ENG Group B (Darren Tafft)【5204】"
+        ]
+      },
+      {
+        "cell": "V34:Z34",
+        "cells": {
+          "V34": "5210",
+          "W34": "AP Phy 1 Group A",
+          "Y34": "Matt Ma"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5210\nAP Phy 1 Group A\nMatt Ma",
+        "name": "AP Phy 1 Group A",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "AA34:AF34",
+        "cells": {
+          "AA34": "5311",
+          "AB34": "Pre_AP Calculus",
+          "AE34": "Ryan Pittman"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nPre_AP Calculus\nRyan Pittman",
+        "name": "Pre_AP Calculus",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "B36:H36",
+        "cells": {
+          "B36": "5310",
+          "D36": "AP Microeconomics",
+          "H36": "Cash Zhang"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "I36:N36",
+        "cells": {
+          "I36": "SELF STUDY"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O36:U36",
+        "cells": {
+          "O36": "5210",
+          "P36": "AP Phy 1 Group B",
+          "U36": "Matt Ma"
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5210\nAP Phy 1 Group B\nMatt Ma",
+        "name": "AP Phy 1 Group B",
+        "room": "5210",
+        "teacher": "Matt Ma",
+        "options": []
+      },
+      {
+        "cell": "V36:Z36",
+        "cells": {
+          "V36": "生物\n蔡涛\n阶梯教室"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "生物\n蔡涛\n阶梯教室",
+        "name": "生物\n蔡涛\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA36:AF36",
+        "cells": {
+          "AA36": "化学\n于福民\n阶梯教室"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "化学\n于福民\n阶梯教室",
+        "name": "化学\n于福民\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B37:H37",
+        "cells": {
+          "B37": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "name": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I37:N37",
+        "cells": {
+          "K37": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210",
+          "M37": "Emmanuel  Akese,\nMatt Ma"
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210\nEmmanuel  Akese,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】",
+          "AP Phy 1 Group B (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "O37:U37",
+        "cells": {
+          "O37": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5306-Darren Tafft"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENG Group A-5201-Thomas  Leasain\nENG Group B-5306-Darren Tafft",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "ENG Group A (Thomas  Leasain)【5201】",
+          "ENG Group B (Darren Tafft)【5306】"
+        ]
+      },
+      {
+        "cell": "V37:Z37",
+        "cells": {
+          "V37": "5310",
+          "W37": "AP Microeconomics-Cash Zhang"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5310\nAP Microeconomics-Cash Zhang",
+        "name": "AP Microeconomics-Cash Zhang",
+        "room": "5310",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA37:AF37",
+        "cells": {
+          "AA37": "5310",
+          "AB37": "AP Microeconomics",
+          "AF37": "Cash Zhang"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5310\nAP Microeconomics\nCash Zhang",
+        "name": "AP Microeconomics",
+        "room": "5310",
+        "teacher": "Cash Zhang",
+        "options": []
+      },
+      {
+        "cell": "B38:H38",
+        "cells": {
+          "B38": "Assembly/Service Project"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Service Project",
+        "name": "Assembly/Service Project",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I38:N38",
+        "cells": {
+          "K38": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210",
+          "M38": "Emmanuel  Akese,\nMatt Ma"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Pre-AP CHEM-5306,\n\nAP Phy 1 Group B-5210\nEmmanuel  Akese,\nMatt Ma",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AP CHEM (Emmanuel  Akese)【5306】",
+          "AP Phy 1 Group B (Matt Ma)【5210】"
+        ]
+      },
+      {
+        "cell": "O38:U38",
+        "cells": {
+          "P38": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      },
+      {
+        "cell": "V38:Z38",
+        "cells": {
+          "V38": "5310, 5210, 5201",
+          "W38": "Counselling"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5310, 5210, 5201\nCounselling",
+        "name": "Counselling",
+        "room": "5310, 5210, 5201",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA38:AF38",
+        "cells": {
+          "AB38": "SELF STUDY"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O39:U39",
+        "cells": {
+          "P39": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "version": "2026-10-28",
+    "sheet": "S1",
+    "grade": "高一",
+    "selectionRevision": 2,
+    "sourceFile": "高一课表20261028.xlsx",
+    "slots": [
+      {
+        "cell": "B43:H43",
+        "cells": {
+          "B43": "5307",
+          "D43": "Pre-AL PHY",
+          "F43": "Bristin  Bhaskas "
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "I43:N43",
+        "cells": {
+          "I43": "5307",
+          "K43": "Pre-AL PHY",
+          "M43": "Bristin  Bhaskas "
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "O43:U43",
+        "cells": {
+          "O43": "5307",
+          "P43": "Pre-AL PHY",
+          "T43": "Bristin  Bhaskas "
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "V43:Z43",
+        "cells": {
+          "V43": "5201",
+          "W43": "ENG",
+          "Z43": "Thomas  Leasain "
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "AA43:AF43",
+        "cells": {
+          "AA43": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B44:H44",
+        "cells": {
+          "B44": "PE"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I44:N44",
+        "cells": {
+          "I44": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "O44:U44",
+        "cells": {
+          "O44": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "V44:Z44",
+        "cells": {
+          "V44": "5202",
+          "W44": "AS_MATH",
+          "Z44": "Bin Li"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5202\nAS_MATH\nBin Li",
+        "name": "AS_MATH",
+        "room": "5202",
+        "teacher": "Bin Li",
+        "options": []
+      },
+      {
+        "cell": "AA44:AF44",
+        "cells": {
+          "AA44": "5202",
+          "AB44": "AS_MATH",
+          "AD44": "Bin Li"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5202\nAS_MATH\nBin Li",
+        "name": "AS_MATH",
+        "room": "5202",
+        "teacher": "Bin Li",
+        "options": []
+      },
+      {
+        "cell": "B45:H45",
+        "cells": {
+          "B45": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "I45:N45",
+        "cells": {
+          "I45": "语文\n岳强\n阶梯教室"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O45:U45",
+        "cells": {
+          "O45": "语文\n岳强\n阶梯教室"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V45:Z45",
+        "cells": {
+          "V45": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA45:AF45",
+        "cells": {
+          "AA45": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "name": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B46:H46",
+        "cells": {
+          "B46": "5202",
+          "D46": "AS_MATH",
+          "F46": "Bin Li"
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5202\nAS_MATH\nBin Li",
+        "name": "AS_MATH",
+        "room": "5202",
+        "teacher": "Bin Li",
+        "options": []
+      },
+      {
+        "cell": "I46:N46",
+        "cells": {
+          "I46": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O46:U46",
+        "cells": {
+          "O46": "PE"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V46:Z46",
+        "cells": {
+          "V46": "物理\n吴学柱\n阶梯教室"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "物理\n吴学柱\n阶梯教室",
+        "name": "物理\n吴学柱\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA46:AF46",
+        "cells": {
+          "AA46": "5202",
+          "AB46": "AS_MATH",
+          "AD46": "Bin Li"
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5202\nAS_MATH\nBin Li",
+        "name": "AS_MATH",
+        "room": "5202",
+        "teacher": "Bin Li",
+        "options": []
+      },
+      {
+        "cell": "B47:H47",
+        "cells": {
+          "B47": "5201",
+          "D47": "ENG",
+          "F47": "Thomas  Leasain "
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "I47:N47",
+        "cells": {
+          "I47": "SELF STUDY"
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O47:U47",
+        "cells": {
+          "O47": "5202",
+          "P47": "AS_MATH",
+          "T47": "Bin Li"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5202\nAS_MATH\nBin Li",
+        "name": "AS_MATH",
+        "room": "5202",
+        "teacher": "Bin Li",
+        "options": []
+      },
+      {
+        "cell": "V47:Z47",
+        "cells": {
+          "V47": "5603",
+          "W47": "Pre-AL CHEM",
+          "Z47": "Jeffery  Faught"
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "AA47:AF47",
+        "cells": {
+          "AA47": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "B49:H49",
+        "cells": {
+          "B49": "5603",
+          "D49": "Pre-AL CHEM",
+          "F49": "Jeffery  Faught"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "I49:N49",
+        "cells": {
+          "I49": "5603",
+          "K49": "Pre-AL CHEM",
+          "M49": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O49:U49",
+        "cells": {
+          "O49": "5201",
+          "P49": "ENG",
+          "T49": "Thomas  Leasain "
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "V49:Z49",
+        "cells": {
+          "V49": "生物\n蔡涛\n阶梯教室"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "生物\n蔡涛\n阶梯教室",
+        "name": "生物\n蔡涛\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA49:AF49",
+        "cells": {
+          "AA49": "化学\n于福民\n阶梯教室"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "化学\n于福民\n阶梯教室",
+        "name": "化学\n于福民\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B50:H50",
+        "cells": {
+          "B50": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "name": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I50:N50",
+        "cells": {
+          "I50": "5201",
+          "K50": "ENG",
+          "M50": "Thomas  Leasain "
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "O50:U50",
+        "cells": {
+          "O50": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V50:Z50",
+        "cells": {
+          "V50": "5307",
+          "W50": "Pre-AL PHY",
+          "Z50": "Bristin  Bhaskas "
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "AA50:AF50",
+        "cells": {
+          "AA50": "5603",
+          "AB50": "Pre-AL CHEM",
+          "AD50": "Jeffery  Faught"
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "B51:H51",
+        "cells": {
+          "B51": "Assembly/Service Project"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Service Project",
+        "name": "Assembly/Service Project",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I51:N51",
+        "cells": {
+          "I51": "5307",
+          "K51": "Pre-AL PHY",
+          "M51": "Bristin  Bhaskas "
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "O51:U51",
+        "cells": {
+          "P51": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      },
+      {
+        "cell": "V51:Z51",
+        "cells": {
+          "V51": "5310, 5210, 5201",
+          "W51": "Counselling"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5310, 5210, 5201\nCounselling",
+        "name": "Counselling",
+        "room": "5310, 5210, 5201",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA51:AF51",
+        "cells": {
+          "AA51": "5201",
+          "AB51": "ENG",
+          "AD51": "Thomas  Leasain "
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "O52:U52",
+        "cells": {
+          "P52": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "version": "2026-10-28",
+    "sheet": "S1",
+    "grade": "高一",
+    "selectionRevision": 2,
+    "sourceFile": "高一课表20261028.xlsx",
+    "slots": [
+      {
+        "cell": "B56:H56",
+        "cells": {
+          "B56": "5201",
+          "D56": "ENG",
+          "F56": "Thomas  Leasain "
+        },
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "I56:N56",
+        "cells": {
+          "I56": "5201",
+          "K56": "ENG",
+          "M56": "Thomas  Leasain "
+        },
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "O56:U56",
+        "cells": {
+          "O56": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V56:Z56",
+        "cells": {
+          "V56": "5603",
+          "W56": "Pre-AL CHEM",
+          "Y56": "Jeffery  Faught"
+        },
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "AA56:AF56",
+        "cells": {
+          "AA56": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B57:H57",
+        "cells": {
+          "B57": "PE"
+        },
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I57:N57",
+        "cells": {
+          "I57": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "O57:U57",
+        "cells": {
+          "O57": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "V57:Z57",
+        "cells": {
+          "V57": "5603",
+          "W57": "Pre-AL CHEM",
+          "Y57": "Jeffery  Faught"
+        },
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "AA57:AF57",
+        "cells": {
+          "AA57": "5603",
+          "AB57": "Pre-AL CHEM",
+          "AD57": "Jeffery  Faught"
+        },
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "B58:H58",
+        "cells": {
+          "B58": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "I58:N58",
+        "cells": {
+          "I58": "语文\n岳强\n阶梯教室"
+        },
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O58:U58",
+        "cells": {
+          "O58": "语文\n岳强\n阶梯教室"
+        },
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "语文\n岳强\n阶梯教室",
+        "name": "语文\n岳强\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V58:Z58",
+        "cells": {
+          "V58": "SELF STUDY"
+        },
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA58:AF58",
+        "cells": {
+          "AA58": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳"
+        },
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "name": "信息（期中前）/通用（期中后）\n刘贵营,蒲政治,宋世星,聂静,张继宏,洪盛熙,黄琳",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B59:H59",
+        "cells": {
+          "B59": "5307",
+          "D59": "Pre-AL PHY",
+          "F59": "Bristin  Bhaskas "
+        },
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "I59:N59",
+        "cells": {
+          "I59": "数学\n陈文河,刘小梅\n阶梯教室"
+        },
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "数学\n陈文河,刘小梅\n阶梯教室",
+        "name": "数学\n陈文河,刘小梅\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "O59:U59",
+        "cells": {
+          "O59": "PE"
+        },
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "PE",
+        "name": "PE",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V59:Z59",
+        "cells": {
+          "V59": "物理\n吴学柱\n阶梯教室"
+        },
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "物理\n吴学柱\n阶梯教室",
+        "name": "物理\n吴学柱\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA59:AF59",
+        "cells": {
+          "AA59": "5307",
+          "AB59": "Pre-AL PHY",
+          "AD59": "Bristin  Bhaskas "
+        },
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "B60:H60",
+        "cells": {
+          "B60": "5307",
+          "D60": "Pre-AL PHY",
+          "F60": "Bristin  Bhaskas "
+        },
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "I60:N60",
+        "cells": {
+          "I60": "5201",
+          "K60": "ENG",
+          "M60": "Thomas  Leasain "
+        },
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "O60:U60",
+        "cells": {
+          "O60": "5311",
+          "P60": "Pre-AL Math",
+          "T60": "Ryan Pittman"
+        },
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5311\nPre-AL Math\nRyan Pittman",
+        "name": "Pre-AL Math",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "V60:Z60",
+        "cells": {
+          "V60": "5201",
+          "W60": "ENG",
+          "Z60": "Thomas  Leasain "
+        },
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "AA60:AF60",
+        "cells": {
+          "AA60": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic"
+        },
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "Pre-AL Economics-5207- Kwasi Boakye-Gyasi\nPre-BIO-5206-Dejan  Suljic",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Pre-AL Economics (Kwasi Boakye-Gyasi)【5207】",
+          "Pre-BIO (Dejan  Suljic)【5206】"
+        ]
+      },
+      {
+        "cell": "B62:H62",
+        "cells": {
+          "B62": "5311",
+          "D62": "Pre-AL Math",
+          "F62": "Ryan Pittman"
+        },
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5311\nPre-AL Math\nRyan Pittman",
+        "name": "Pre-AL Math",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "I62:N62",
+        "cells": {
+          "I62": "5311",
+          "K62": "Pre-AL Math",
+          "M62": "Ryan Pittman"
+        },
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5311\nPre-AL Math\nRyan Pittman",
+        "name": "Pre-AL Math",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "O62:U62",
+        "cells": {
+          "O62": "5307",
+          "P62": "Pre-AL PHY",
+          "T62": "Bristin  Bhaskas "
+        },
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "V62:Z62",
+        "cells": {
+          "V62": "生物\n蔡涛\n阶梯教室"
+        },
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "生物\n蔡涛\n阶梯教室",
+        "name": "生物\n蔡涛\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA62:AF62",
+        "cells": {
+          "AA62": "化学\n于福民\n阶梯教室"
+        },
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "化学\n于福民\n阶梯教室",
+        "name": "化学\n于福民\n阶梯教室",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "B63:H63",
+        "cells": {
+          "B63": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强"
+        },
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "name": "音乐(单周)/美术(双周)-阶梯教室\n姚洁妮,封雨/薛俊强",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I63:N63",
+        "cells": {
+          "I63": "5307",
+          "J63": "Pre-AL PHY",
+          "N63": "Bristin  Bhaskas "
+        },
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5307\nPre-AL PHY\nBristin  Bhaskas ",
+        "name": "Pre-AL PHY",
+        "room": "5307",
+        "teacher": "Bristin  Bhaskas ",
+        "options": []
+      },
+      {
+        "cell": "O63:U63",
+        "cells": {
+          "P63": "SELF STUDY"
+        },
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "SELF STUDY",
+        "name": "SELF STUDY",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "V63:Z63",
+        "cells": {
+          "V63": "5311",
+          "W63": "Pre-AL Math",
+          "Z63": "Ryan Pittman"
+        },
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5311\nPre-AL Math\nRyan Pittman",
+        "name": "Pre-AL Math",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "AA63:AF63",
+        "cells": {
+          "AA63": "5201",
+          "AB63": "ENG",
+          "AD63": "Thomas  Leasain "
+        },
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "5201\nENG\nThomas  Leasain ",
+        "name": "ENG",
+        "room": "5201",
+        "teacher": "Thomas  Leasain ",
+        "options": []
+      },
+      {
+        "cell": "B64:H64",
+        "cells": {
+          "B64": "Assembly/Service Project"
+        },
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Service Project",
+        "name": "Assembly/Service Project",
+        "room": "",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "I64:N64",
+        "cells": {
+          "I64": "5603",
+          "K64": "Pre-AL CHEM",
+          "M64": "Jeffery  Faught"
+        },
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5603\nPre-AL CHEM\nJeffery  Faught",
+        "name": "Pre-AL CHEM",
+        "room": "5603",
+        "teacher": "Jeffery  Faught",
+        "options": []
+      },
+      {
+        "cell": "O64:U64",
+        "cells": {
+          "P64": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      },
+      {
+        "cell": "V64:Z64",
+        "cells": {
+          "V64": "5310, 5210, 5201",
+          "W64": "Counselling"
+        },
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5310, 5210, 5201\nCounselling",
+        "name": "Counselling",
+        "room": "5310, 5210, 5201",
+        "teacher": "",
+        "options": []
+      },
+      {
+        "cell": "AA64:AF64",
+        "cells": {
+          "AA64": "5311",
+          "AB64": "Pre-AL Math",
+          "AD64": "Ryan Pittman"
+        },
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "5311\nPre-AL Math\nRyan Pittman",
+        "name": "Pre-AL Math",
+        "room": "5311",
+        "teacher": "Ryan Pittman",
+        "options": []
+      },
+      {
+        "cell": "O65:U65",
+        "cells": {
+          "P65": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅"
+        },
+        "day": 3,
+        "start": "16:40",
+        "end": "17:20",
+        "raw": "Debate-5302\nCRW-5311\nPublic Speaking-5301\nDrama-多功能报告厅",
+        "name": "待选择课程",
+        "room": "",
+        "teacher": "",
+        "options": [
+          "Debate ()【5302】",
+          "CRW ()【5311】",
+          "Public Speaking ()【5301】",
+          "Drama ()【多功能报告厅】"
+        ]
+      }
+    ]
+  }
+]

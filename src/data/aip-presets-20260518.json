@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "211",
+    "version": "2026-05-18",
+    "sheet": "Y11",
+    "slots": [
+      {
+        "cell": "D4",
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "E4",
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "F4",
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "G4",
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】"
+      },
+      {
+        "cell": "H4",
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D5",
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "E5",
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "F5",
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "G5",
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "H5",
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "体育"
+      },
+      {
+        "cell": "D6",
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】"
+      },
+      {
+        "cell": "E6",
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP Physics C\n(Dmitrii Shedogubov)\n【5310】\n"
+      },
+      {
+        "cell": "F6",
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "生物-王莉莉\n阶梯教室"
+      },
+      {
+        "cell": "G6",
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H6",
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "体育"
+      },
+      {
+        "cell": "D7",
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "E7",
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "F7",
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】"
+      },
+      {
+        "cell": "G7",
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "H7",
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "D8",
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "E8",
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "F8",
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "升学课\n"
+      },
+      {
+        "cell": "G8",
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H8",
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】"
+      },
+      {
+        "cell": "D10",
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Physics C\n(Dmitrii Shedogubov)\n【5310】\n"
+      },
+      {
+        "cell": "E10",
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】"
+      },
+      {
+        "cell": "F10",
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "G10",
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Physics C\n(Dmitrii Shedogubov)\n【5310】\n"
+      },
+      {
+        "cell": "H10",
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "D11",
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "E11",
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "F11",
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      },
+      {
+        "cell": "G11",
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "H11",
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "D12",
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Clubs"
+      },
+      {
+        "cell": "E12",
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "\n化学-方琳雅\n阶梯教室"
+      },
+      {
+        "cell": "F12",
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "G12",
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "H12",
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP Seminar\n(Nathan Crow)\n【5209】"
+      }
+    ]
+  },
+  {
+    "id": "212",
+    "version": "2026-05-18",
+    "sheet": "Y11",
+    "slots": [
+      {
+        "cell": "D17",
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "E17",
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP PHY 2\n(Anita Ching)\n【2206】\n"
+      },
+      {
+        "cell": "F17",
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP CAL BC\n(Ryan Pittman)\n【5311】"
+      },
+      {
+        "cell": "G17",
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "H17",
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D18",
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AP PHY 2\n(Anita Ching)\n【5210】\n"
+      },
+      {
+        "cell": "E18",
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "F18",
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "G18",
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "H18",
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "体育"
+      },
+      {
+        "cell": "D19",
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "E19",
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP CAL BC\n(Ryan Pittman)\n【5311】"
+      },
+      {
+        "cell": "F19",
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "生物-王莉莉\n阶梯教室"
+      },
+      {
+        "cell": "G19",
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H19",
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "体育"
+      },
+      {
+        "cell": "D20",
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "E20",
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "F20",
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】"
+      },
+      {
+        "cell": "G20",
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "H20",
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D21",
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "E21",
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "F21",
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "升学课\n"
+      },
+      {
+        "cell": "G21",
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H21",
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "D23",
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP CAL BC\n(Ryan Pittman)\n【5311】"
+      },
+      {
+        "cell": "E23",
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "F23",
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "ENREACH\nCRW【5310】/DEBATE【5304】/PUBLIC SPEAKING【5301】/\nDrama 【5101】"
+      },
+      {
+        "cell": "G23",
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP CAL BC\n(Ryan Pittman)\n【5311】"
+      },
+      {
+        "cell": "H23",
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "D24",
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "E24",
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "F24",
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENREACH\nCRW【5310】/DEBATE【5304】/PUBLIC SPEAKING【5301】/\nDrama 【5101】"
+      },
+      {
+        "cell": "G24",
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "H24",
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP PHY 2\n(Anita Ching)\n【5210】\n"
+      },
+      {
+        "cell": "D25",
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Clubs"
+      },
+      {
+        "cell": "E25",
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "\n化学-方琳雅\n阶梯教室"
+      },
+      {
+        "cell": "F25",
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP PHY 2\n(Anita Ching)\n【5210】\n"
+      },
+      {
+        "cell": "G25",
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "H25",
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "自习课"
+      }
+    ]
+  },
+  {
+    "id": "212B",
+    "version": "2026-05-18",
+    "sheet": "Y11",
+    "slots": [
+      {
+        "cell": "D29",
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "E29",
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "F29",
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ENG\n(Lesley Li)\n【5601】"
+      },
+      {
+        "cell": "G29",
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "H29",
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D30",
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG\n(Lesley Li)\n【5601】"
+      },
+      {
+        "cell": "E30",
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "ENG\n(Lesley Li)\n【5601】"
+      },
+      {
+        "cell": "F30",
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "G30",
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "H30",
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "体育"
+      },
+      {
+        "cell": "D31",
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "E31",
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "F31",
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "生物-王莉莉\n阶梯教室"
+      },
+      {
+        "cell": "G31",
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H31",
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "体育"
+      },
+      {
+        "cell": "D32",
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "E32",
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "F32",
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】"
+      },
+      {
+        "cell": "G32",
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "H32",
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D33",
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "自习课"
+      },
+      {
+        "cell": "E33",
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "F33",
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "升学课\n"
+      },
+      {
+        "cell": "G33",
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H33",
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "D35",
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "E35",
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Psychology (Dharnia Dave)【5302】\n/AP Chemistry(Emmanuel Akese)\n【5306】/AP World History(Jeremiah Drought)\n【5201】"
+      },
+      {
+        "cell": "F35",
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "ENREACH\nCRW【5310】/DEBATE【5304】/PUBLIC SPEAKING【5301】/\nDrama 【5101】"
+      },
+      {
+        "cell": "G35",
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "自习课"
+      },
+      {
+        "cell": "H35",
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "D36",
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "E36",
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "F36",
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENREACH\nCRW【5310】/DEBATE【5304】/PUBLIC SPEAKING【5301】/\nDrama 【5101】"
+      },
+      {
+        "cell": "G36",
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AP Biology-Dejan Suljic\n【5206】/AP CSA (Dmitrii Shedogubov)【5310】/AP Macro(Ken Su)【5311】"
+      },
+      {
+        "cell": "H36",
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D37",
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Clubs"
+      },
+      {
+        "cell": "E37",
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "\n化学-方琳雅\n阶梯教室"
+      },
+      {
+        "cell": "F37",
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AP Statistics\n(Netsanet Tsegaw)\n【5301】"
+      },
+      {
+        "cell": "G37",
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ENG\n(Lesley Li)\n【5601】"
+      },
+      {
+        "cell": "H37",
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "ENG\n(Lesley Li)\n【5601】"
+      }
+    ]
+  },
+  {
+    "id": "213",
+    "version": "2026-05-18",
+    "sheet": "Y11",
+    "slots": [
+      {
+        "cell": "D42",
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "E42",
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "F42",
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "G42",
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AS Further Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "H42",
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "D43",
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "E43",
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "F43",
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "G43",
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "H43",
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "体育"
+      },
+      {
+        "cell": "D44",
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "E44",
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "自习课"
+      },
+      {
+        "cell": "F44",
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "生物-王莉莉\n阶梯教室"
+      },
+      {
+        "cell": "G44",
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H44",
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "体育"
+      },
+      {
+        "cell": "D45",
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "E45",
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "F45",
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AS Further Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "G45",
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "H45",
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D46",
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "E46",
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "F46",
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "升学课\n"
+      },
+      {
+        "cell": "G46",
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H46",
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "D48",
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "E48",
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Further Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "F48",
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "G48",
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "H48",
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "D49",
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AS Further Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "E49",
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "F49",
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "G49",
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "H49",
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "D50",
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Clubs"
+      },
+      {
+        "cell": "E50",
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "\n化学-方琳雅\n阶梯教室"
+      },
+      {
+        "cell": "F50",
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "自习课"
+      },
+      {
+        "cell": "G50",
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "自习课"
+      },
+      {
+        "cell": "H50",
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      }
+    ]
+  },
+  {
+    "id": "214",
+    "version": "2026-05-18",
+    "sheet": "Y11",
+    "slots": [
+      {
+        "cell": "D55",
+        "day": 1,
+        "start": "08:10",
+        "end": "08:50",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "E55",
+        "day": 2,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "AL Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "F55",
+        "day": 3,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "G55",
+        "day": 4,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "H55",
+        "day": 5,
+        "start": "08:00",
+        "end": "08:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "D56",
+        "day": 1,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "E56",
+        "day": 2,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "F56",
+        "day": 3,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "G56",
+        "day": 4,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "H56",
+        "day": 5,
+        "start": "09:00",
+        "end": "09:40",
+        "raw": "体育"
+      },
+      {
+        "cell": "D57",
+        "day": 1,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "E57",
+        "day": 2,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "F57",
+        "day": 3,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "生物-王莉莉\n阶梯教室"
+      },
+      {
+        "cell": "G57",
+        "day": 4,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H57",
+        "day": 5,
+        "start": "09:50",
+        "end": "10:30",
+        "raw": "体育"
+      },
+      {
+        "cell": "D58",
+        "day": 1,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "E58",
+        "day": 2,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "F58",
+        "day": 3,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "AS Physics\n(Bristin Bhaskas)\n【5307】"
+      },
+      {
+        "cell": "G58",
+        "day": 4,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "\n*历史\n阶梯教室"
+      },
+      {
+        "cell": "H58",
+        "day": 5,
+        "start": "10:40",
+        "end": "11:20",
+        "raw": "自习课"
+      },
+      {
+        "cell": "D59",
+        "day": 1,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "E59",
+        "day": 2,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AL Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "F59",
+        "day": 3,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "升学课\n"
+      },
+      {
+        "cell": "G59",
+        "day": 4,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "地理-周沛芳\n阶梯教室"
+      },
+      {
+        "cell": "H59",
+        "day": 5,
+        "start": "11:30",
+        "end": "12:10",
+        "raw": "AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "D61",
+        "day": 1,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "E61",
+        "day": 2,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "F61",
+        "day": 3,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "G61",
+        "day": 4,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      },
+      {
+        "cell": "H61",
+        "day": 5,
+        "start": "14:10",
+        "end": "14:50",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "D62",
+        "day": 1,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "ENG\n(Thomas Leasain)\n【5204】"
+      },
+      {
+        "cell": "E62",
+        "day": 2,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AS Chemistry(Patience Li)\n【5202】"
+      },
+      {
+        "cell": "F62",
+        "day": 3,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AL Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "G62",
+        "day": 4,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "自习课"
+      },
+      {
+        "cell": "H62",
+        "day": 5,
+        "start": "15:00",
+        "end": "15:40",
+        "raw": "AL Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "D63",
+        "day": 1,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "Assembly/Clubs"
+      },
+      {
+        "cell": "E63",
+        "day": 2,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "\n化学-方琳雅\n阶梯教室"
+      },
+      {
+        "cell": "F63",
+        "day": 3,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "自习课"
+      },
+      {
+        "cell": "G63",
+        "day": 4,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AL Maths\n (Ryan Pittman)【5311】"
+      },
+      {
+        "cell": "H63",
+        "day": 5,
+        "start": "15:50",
+        "end": "16:30",
+        "raw": "AS Biology\n(Dejan Suljic)\n【5206】/AS Economics\n(Kwasi Boakye-Gyasi)\n【5207】"
+      }
+    ]
+  }
+]
