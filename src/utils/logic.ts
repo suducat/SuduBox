@@ -357,19 +357,38 @@ export function validateBackup(value: unknown): Data {
   }
   return { ...emptyData(), ...d, timer: null } as Data;
 }
-export function download(
+export async function download(
   name: string,
   content: string,
   type = "application/json",
 ) {
+  if ("__TAURI_INTERNALS__" in window) {
+    try {
+      const { save } = await import("@tauri-apps/plugin-dialog");
+      const { writeTextFile } = await import("@tauri-apps/plugin-fs");
+      const path = await save({ defaultPath: name, filters: [{ name: "导出文件", extensions: [name.split(".").pop() || "json"] }] });
+      if (!path) return false;
+      await writeTextFile(path, content);
+      return true;
+    } catch (error) {
+      alert(`保存失败，原有数据未更改：${error instanceof Error ? error.message : String(error)}`);
+      return false;
+    }
+  }
   const u = URL.createObjectURL(new Blob([content], { type }));
   const a = document.createElement("a");
   a.href = u;
   a.download = name;
   a.click();
   setTimeout(() => URL.revokeObjectURL(u), 1000);
+  return true;
 }
 export async function copy(text: string) {
+  if ("__TAURI_INTERNALS__" in window) {
+    const { writeText } = await import("@tauri-apps/plugin-clipboard-manager");
+    await writeText(text);
+    return;
+  }
   if (!navigator.clipboard)
     throw new Error("当前环境不支持一键复制，请手动选择文本复制");
   await navigator.clipboard.writeText(text);

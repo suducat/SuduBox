@@ -28,3 +28,9 @@ backups/
 Thumbs.db
 .idea/
 .vscode/
+
+# Desktop build tools and artifacts
+.desktop-tools/
+src-tauri/target/
+src-tauri/gen/
+release/

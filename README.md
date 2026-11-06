@@ -69,3 +69,7 @@ git push
 ```
 
 提交前核对文件列表，勿提交环境变量、凭证、个人备份或学生个人信息。`node_modules/`、`dist/`、环境变量文件和原始 Excel 已在 `.gitignore` 中排除。
+
+## macOS 桌面版
+
+项目包含 Tauri 2 封装，保留原有网页版。开发机安装 Rust 和 Xcode Command Line Tools 后执行 `npm run desktop:build`；成功后输出到 `release/macos/`。最终使用者无需 Node.js、终端或本地服务器。首版面向 Apple Silicon / macOS 14+，采用本机测试签名，未经过 Apple 公证。网页版与桌面版的数据通过原 JSON 备份迁移，详情见 [桌面版说明](docs/MACOS.md)。

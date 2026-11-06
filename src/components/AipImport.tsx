@@ -170,11 +170,13 @@ export function AipImport() {
               lock.current = true;
               setBusy(true);
               try {
-                if (replace)
-                  download(
+                if (replace) {
+                  const saved = await download(
                     `速度工具箱-替换前备份-${localDate()}.json`,
                     JSON.stringify({ app: "SuduBox", version: 1, data }),
                   );
+                  if (!saved) return;
+                }
                 const ok = await update((d) =>
                   importPreset(d, preset.id, selected, replace, uid),
                 );

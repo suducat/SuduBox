@@ -1,0 +1,14 @@
+[package]
+name = "sudubox-desktop"
+version = "1.0.0"
+description = "速度工具箱 macOS desktop application"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-clipboard-manager = "2"

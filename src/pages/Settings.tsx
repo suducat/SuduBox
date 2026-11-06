@@ -182,8 +182,8 @@ export function Backup() {
           </p>
           <button
             className="primary"
-            onClick={() => {
-              download(
+            onClick={async () => {
+              const saved = await download(
                 `速度工具箱-backup-${localDate()}.json`,
                 JSON.stringify(
                   {
@@ -196,7 +196,7 @@ export function Backup() {
                   2,
                 ),
               );
-              toast("备份文件已生成");
+              if (saved) toast("备份文件已生成");
             }}
           >
             <Download size={17} />

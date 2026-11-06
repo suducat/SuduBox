@@ -1,4 +1,5 @@
 export function registerOffline() {
+  if ("__TAURI_INTERNALS__" in window) return;
   if (!import.meta.env.PROD || !("serviceWorker" in navigator)) return;
   window.addEventListener("load", () => {
     navigator.serviceWorker
