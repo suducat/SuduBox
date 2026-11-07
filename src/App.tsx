@@ -1,3 +1,4 @@
+import { UpdateNotice } from "./components/Pwa";
 import Gpa from "./pages/Gpa";
 import { Onboarding, GUIDE_KEY } from "./components/Onboarding";
 import { useState, useEffect, useRef } from "react";
@@ -221,6 +222,7 @@ export default function App() {
             <kbd>⌘ K</kbd>
           </button>
         </header>
+        <UpdateNotice />
         <main id="main" className="main-content" key={route}>
           {pages[route] ??
             (["files", "ai"].includes(route) ? (

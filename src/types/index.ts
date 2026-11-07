@@ -1,3 +1,4 @@
+import type { GpaSettings } from "../utils/gpa-entry";
 import type { GpaRow } from "../utils/gpa";
 export interface Course {
   specificDate?: string;
@@ -79,6 +80,7 @@ export interface Timer {
   elapsed: number;
 }
 export interface Preferences {
+  gpaSettings?: GpaSettings;
   aipSelections?: Record<string, Record<string, string>>;
   specialDays?: {
     date: string;
@@ -111,6 +113,7 @@ export interface Preferences {
 }
 export interface Data {
   gpa?: GpaRow[];
+  gpaDraft?: GpaRow[];
   courses: Course[];
   lessons: Lesson[];
   notes: Note[];

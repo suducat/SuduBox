@@ -2863,3 +2863,121 @@ details .form {
 .gpa-page .summary-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:18px 0; }
 .gpa-page > .inline { flex-wrap:wrap; }
 @media(max-width:600px) { .gpa-page .summary-grid { grid-template-columns:minmax(0,1fr); } }
+
+/* GPA: the result and grades stay in view; supporting tools fold away. */
+.gpa-simple { max-width:1000px; margin:0 auto; }
+.gpa-simple .page-head { margin-bottom:18px; }
+.gpa-simple .page-head p { margin-top:6px; }
+.gpa-result { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:22px 24px; background:var(--surface); border:1px solid var(--border); border-radius:16px; margin-bottom:10px; }
+.gpa-result > div > span { color:var(--muted); font-size:12px; }
+.gpa-number { font-size:44px; font-weight:720; letter-spacing:-1.5px; line-height:1.3; color:var(--primary); font-variant-numeric:tabular-nums; }
+.gpa-number small { font-size:18px; font-weight:500; color:var(--muted); letter-spacing:0; }
+.gpa-result p { margin:4px 0 0; font-size:12px; }
+.gpa-save-state { color:var(--muted); text-align:right; font-size:11px; line-height:1.8; }
+.gpa-disclosure { padding:13px 0; border-bottom:1px solid var(--border); }
+.gpa-disclosure > summary { cursor:pointer; font-size:13px; font-weight:600; padding:4px 0; }
+.gpa-disclosure[open] > summary { margin-bottom:14px; }
+.gpa-disclosure p { font-size:12px; line-height:1.8; margin:8px 0; }
+.gpa-simple label:not(.check) { display:flex; flex-direction:column; gap:7px; min-width:0; font-size:12px; }
+.gpa-simple input:not([type=checkbox]),.gpa-simple select,.gpa-simple textarea { width:100%; min-width:0; font:inherit; }
+.gpa-simple select { appearance:none; -webkit-appearance:none; border:1px solid var(--border); padding:10px 34px 10px 12px; background-color:var(--surface); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238392ab' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 10px center; }
+.gpa-simple .check > input { width:16px; height:16px; flex:0 0 16px; }
+.gpa-actions { display:flex; align-items:center; gap:9px; margin:18px 0 12px; }
+.gpa-actions > button,.gpa-menu-wrap > button { display:flex; align-items:center; justify-content:center; gap:6px; }
+.gpa-menu-wrap { position:relative; margin-left:auto; }
+.gpa-menu { position:absolute; z-index:12; top:calc(100% + 6px); right:0; min-width:190px; padding:6px; border:1px solid var(--border); border-radius:12px; background:var(--surface); box-shadow:var(--shadow); }
+.gpa-menu button,.gpa-menu a { display:block; width:100%; text-align:left; border:0; padding:11px; font-size:12px; border-radius:7px; }
+.gpa-menu a:hover { background:var(--bg); }
+.gpa-list { border:1px solid var(--border); border-radius:12px; overflow:clip; background:var(--surface); }
+.gpa-list-head,.gpa-course-row { display:grid; grid-template-columns:minmax(0,1fr) 150px 70px 56px; align-items:center; gap:14px; padding:12px 18px; }
+.gpa-list-head { font-size:11px; color:var(--muted); border-bottom:1px solid var(--border); background:var(--bg); }
+.gpa-course + .gpa-course { border-top:1px solid var(--border); }
+.gpa-course-name { display:flex; align-items:center; justify-content:space-between; text-align:left; gap:10px; min-width:0; padding:4px 0; border:0; border-radius:0; line-height:1.5; overflow-wrap:anywhere; }
+.gpa-course-name svg { flex-shrink:0; color:var(--muted); }
+.gpa-course-name[aria-expanded=true] svg { transform:rotate(180deg); }
+.gpa-grade-input input { padding:8px 10px; font-variant-numeric:tabular-nums; }
+.gpa-grade-input input[aria-invalid=true] { border-color:#d55b50; }
+.gpa-grade-input small { color:#d55b50; display:block; font-size:11px; margin-top:5px; }
+.gpa-grade-hint { display:block; margin-top:4px; color:var(--muted); font-size:10px; }
+.gpa-delete { padding:6px; border:0; color:var(--muted); font-size:12px; }
+.gpa-points { font-variant-numeric:tabular-nums; font-size:16px; }
+.gpa-points .mobile-label { display:none; }
+.gpa-course-details { padding:0 18px 18px; border-top:1px dashed var(--border); margin-top:4px; }
+.gpa-course-details p { margin:12px 0; font-size:12px; line-height:1.7; }
+.gpa-course-details .form { gap:12px; }
+.gpa-course-details .form > button { align-self:flex-start; }
+.gpa-empty { padding:32px 12px; text-align:center; }
+.gpa-empty h3 { margin:0 0 7px; }
+.gpa-empty p { font-size:12px; }
+.gpa-hint { color:var(--muted); font-size:12px; }
+.gpa-picker { position:relative; min-width:0; }
+.gpa-picker input { margin-top:7px; }
+.gpa-options { position:relative; max-height:210px; overflow:auto; border:1px solid var(--border); border-radius:10px; margin-top:5px; background:var(--surface); padding:4px; }
+.gpa-options button { display:block; width:100%; text-align:left; border:0; font-size:12px; padding:10px; }
+.gpa-options button small { display:block; font-size:10px; color:var(--muted); margin-top:4px; }
+.gpa-options button[aria-selected=true] { background:var(--bg); }
+.gpa-options p { padding:8px; font-size:12px; }
+.gpa-live { font-size:17px; font-weight:600; color:var(--primary); }
+.gpa-live small { font-size:11px; color:var(--muted); font-weight:400; }
+.gpa-bulk > label { margin-bottom:12px; }
+.gpa-bulk > button:last-child { margin-top:14px; }
+.gpa-preview { padding:14px 0; border-bottom:1px solid var(--border); }
+.gpa-preview-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; font-size:12px; }
+.gpa-preview-heading strong { overflow-wrap:anywhere; }
+.gpa-preview-heading span { white-space:nowrap; }
+.gpa-preview > small { color:var(--muted); font-size:11px; }
+.gpa-preview details { font-size:12px; margin-top:8px; }
+.gpa-preview summary { cursor:pointer; color:var(--muted); }
+.gpa-missing { margin-top:12px; }
+.gpa-missing .check { margin-top:12px; }
+.gpa-preview .gpa-picker { margin-top:12px; }
+.gpa-history { display:flex; flex-direction:column; gap:6px; align-items:flex-start; }
+.gpa-grade-scale { display:flex; flex-wrap:wrap; gap:12px; font-size:12px; }
+.gpa-grade-scale > div { text-align:center; padding:8px; }
+.gpa-grade-scale dd { margin:5px 0 0; color:var(--muted); }
+.gpa-simulation-result { font-size:28px; }
+@media(max-width:600px) {
+  .gpa-result { padding:18px; align-items:flex-start; flex-direction:column; gap:8px; }
+  .gpa-save-state { text-align:left; font-size:10px; }
+  .gpa-save-state br { display:none; }
+  .gpa-save-state br::after { content:' · '; }
+  .gpa-number { font-size:40px; }
+  .gpa-actions { gap:7px; }
+  .gpa-actions button { padding:9px; font-size:12px; }
+  .gpa-menu-wrap > button > span { display:none; }
+  .gpa-menu-wrap > button { min-width:40px; min-height:40px; }
+  .gpa-list-head { display:none; }
+  .gpa-course-row { grid-template-columns:minmax(0,1fr) 56px 42px; padding:13px; gap:10px; }
+  .gpa-course-name { grid-column:1/-1; font-size:13px; }
+  .gpa-simple input:not([type=checkbox]),.gpa-simple select { font-size:16px; }
+  .gpa-course-details { padding:0 13px 15px; }
+  .gpa-preview-heading { flex-wrap:wrap; gap:5px; }
+}
+
+.gpa-simple > .gpa-disclosure { padding:6px 0; }
+.gpa-simple .gpa-disclosure > summary { min-height:36px; justify-content:space-between; }
+.gpa-simple .gpa-disclosure > summary::after { content:'⌄'; color:var(--muted); }
+.gpa-simple .gpa-disclosure[open] > summary::after { transform:rotate(180deg); }
+.gpa-simple .gpa-preview summary { min-height:36px; }
+@media(max-width:600px) { .gpa-simple .gpa-disclosure > summary { min-height:44px; } }
+
+/* Mobile web and installed PWA: safe areas and the visible keyboard viewport. */
+body { padding-left:env(safe-area-inset-left,0px); padding-right:env(safe-area-inset-right,0px); }
+.main-content { padding-bottom:calc(28px + env(safe-area-inset-bottom,0px)); min-width:0; }
+.main-shell,.formula-card,.formula-grid > *, .day-column { min-width:0; }
+.topbar { padding-top:env(safe-area-inset-top,0px); min-height:calc(60px + env(safe-area-inset-top,0px)); }
+.sidebar { padding-bottom:calc(20px + env(safe-area-inset-bottom,0px)); }
+dialog { max-height:calc(var(--visible-height,90dvh) - 24px); overscroll-behavior:contain; }
+input,textarea,select { scroll-margin-top:90px; scroll-margin-bottom:100px; }
+.pwa-update { display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; padding:12px 18px; background:var(--primary-soft); color:var(--text); font-size:12px; border-bottom:1px solid var(--border); }
+.pwa-update button { min-height:40px; }
+.install-guide { margin-top:20px; }
+.install-guide h2 { margin-top:0; }
+.install-guide p { font-size:12px; line-height:1.9; }
+@media(max-width:700px) {
+  .main-content { padding-bottom:calc(24px + env(safe-area-inset-bottom,0px)); }
+  input:not([type=checkbox]):not([type=radio]):not([type=color]),textarea,select { font-size:16px; }
+  .gpa-delete,.gpa-course-name,.gpa-menu-wrap > button { min-height:44px; }
+  .formula-card .math { max-width:100%; }
+  .pwa-update { justify-content:flex-start; }
+}

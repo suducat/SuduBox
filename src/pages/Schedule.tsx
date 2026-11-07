@@ -25,7 +25,9 @@ const days = ["周一", "周二", "周三", "周四", "周五", "周六", "周�
 export default function Schedule() {
   const { data, update, toast, now } = useStore();
   const [setupOpen, setSetupOpen] = useState(false);
-  const [view, setView] = useState("week");
+  const [view, setView] = useState(() =>
+    window.matchMedia("(max-width: 700px)").matches ? "today" : "week",
+  );
   const [offset, setOffset] = useState(0);
   const [edit, setEdit] = useState<Course | null>(null);
   const [remove, setRemove] = useState<Course | null>(null);

@@ -1,3 +1,4 @@
+import { InstallGuide } from "../components/Pwa";
 import { Author } from "../components/Author";
 import { APP_VERSION } from "../data/version";
 import { showGuide } from "../components/Onboarding";
@@ -164,7 +165,9 @@ export function Backup() {
     d.notes.length +
     d.exams.length +
     d.words.length +
-    d.focus.length + (d.gpa?.length ?? 0);
+    d.focus.length +
+    (d.gpa?.length ?? 0) +
+    (d.gpaDraft?.length ?? 0);
   return (
     <>
       <PageHead
@@ -271,7 +274,8 @@ export function Backup() {
             <span>{pending.exams.length} 场考试</span>
             <span>{pending.words.length} 个单词</span>
             <span>{pending.focus.length} 次专注</span>
-            <span>{pending.gpa?.length ?? 0} 条成绩</span>
+            <span>{pending.gpa?.length ?? 0} 条正式成绩</span>
+            <span>{pending.gpaDraft?.length ?? 0} 条估算草稿</span>
           </div>
           <p className="warning">
             当前 {count(data)}{" "}
@@ -362,6 +366,13 @@ export function About() {
         </a>
         <OfflineStatus />
         <details>
+          <summary>v1.1.1 更新日志</summary>
+          <p>
+            GPA
+            页面简化为搜索课程、直接输入成绩和即时计算；草稿自动保存，批量粘贴更方便，设置与专业功能按需展开。
+          </p>
+        </details>
+        <details>
           <summary>v1.1.0 更新日志</summary>
           <p>
             AIP GPA
@@ -370,6 +381,7 @@ export function About() {
           <p>项目源码公开，暂未指定开源许可证。</p>
         </details>
       </section>
+      <InstallGuide />
       <Author />
     </>
   );

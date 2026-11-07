@@ -83,13 +83,73 @@ it("相同实体ID重复提交不会新增记录，题库与恢复点备份可�
   ).toBe("");
 });
 
-it("GPA成绩保存后重新读取并支持备份恢复，不影响便签",async()=>{
- const base=emptyData();
- base.gpa=[{id:"gpa-test",name:"Synthetic course",year:"2026–2027",grade:"Y11",period:"S1Final",category:"H",score:88,letter:"A-",credits:1,included:true,passFail:false}];
- base.notes=[{id:"synthetic-note",text:"Synthetic note",subject:"",date:"2026-11-07",pinned:false,done:false,created:1}];
- await mutate(()=>base);
- const restored=validateBackup(JSON.parse(JSON.stringify({version:1,data:await load()})));
- await mutate(()=>restored);
- expect((await load()).gpa?.[0].score).toBe(88);
- expect((await load()).notes[0].id).toBe("synthetic-note");
+it("GPA成绩保存后重新读取并支持备份恢复，不影响便签", async () => {
+  const base = emptyData();
+  base.gpa = [
+    {
+      id: "gpa-test",
+      name: "Synthetic course",
+      year: "2026–2027",
+      grade: "Y11",
+      period: "S1Final",
+      category: "H",
+      score: 88,
+      letter: "A-",
+      credits: 1,
+      included: true,
+      passFail: false,
+    },
+  ];
+  base.notes = [
+    {
+      id: "synthetic-note",
+      text: "Synthetic note",
+      subject: "",
+      date: "2026-11-07",
+      pinned: false,
+      done: false,
+      created: 1,
+    },
+  ];
+  await mutate(() => base);
+  const restored = validateBackup(
+    JSON.parse(JSON.stringify({ version: 1, data: await load() })),
+  );
+  await mutate(() => restored);
+  expect((await load()).gpa?.[0].score).toBe(88);
+  expect((await load()).notes[0].id).toBe("synthetic-note");
+});
+
+it("独立草稿、正式成绩和计算设置可一起备份恢复", async () => {
+  const base = emptyData();
+  const row = {
+    id: "draft-only",
+    name: "Synthetic GPA draft",
+    year: "2026–2027",
+    grade: "Y11" as const,
+    period: "S1Final" as const,
+    category: "H" as const,
+    score: 94,
+    letter: null,
+    credits: 1,
+    included: true,
+    passFail: false,
+  };
+  base.gpaDraft = [row];
+  base.gpa = [{ ...row, id: "official-only", score: 88 }];
+  base.preferences.gpaSettings = {
+    year: "2026–2027",
+    grade: "Y11",
+    period: "S1Final",
+    track: "AP",
+    mode: "draft",
+  };
+  await mutate(() => base);
+  const backup = JSON.parse(JSON.stringify({ version: 1, data: await load() }));
+  await mutate(() => emptyData());
+  await mutate(() => validateBackup(backup));
+  const restored = await load();
+  expect(restored.gpaDraft?.[0].score).toBe(94);
+  expect(restored.gpa?.[0].score).toBe(88);
+  expect(restored.preferences.gpaSettings?.mode).toBe("draft");
 });

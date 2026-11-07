@@ -1,1 +1,32 @@
-{"name":"速度工具箱","short_name":"速度工具箱","description":"速度工具箱 · 让学习更简单","lang":"zh-CN","theme_color":"#4579ed","background_color":"#f6f8fc","display":"standalone","start_url":"./","scope":"./","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "速度工具箱",
+  "short_name": "速度工具箱",
+  "description": "速度工具箱 · 让学习更简单",
+  "lang": "zh-CN",
+  "theme_color": "#4579ed",
+  "background_color": "#f6f8fc",
+  "display": "standalone",
+  "start_url": "./",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "./"
+}

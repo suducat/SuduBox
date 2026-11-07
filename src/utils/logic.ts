@@ -1,3 +1,4 @@
+import { validGpaSettings } from "./gpa-entry";
 import { validGpaRows } from "./gpa";
 import { emptyData, type Course, type Data, type Exam } from "../types";
 export const localDate = (d = new Date()) =>
@@ -137,6 +138,8 @@ export function validateBackup(value: unknown): Data {
   const d = value.data;
   if (d.gpa !== undefined && !validGpaRows(d.gpa))
     throw new Error("GPA 备份数据无效");
+  if (d.gpaDraft !== undefined && !validGpaRows(d.gpaDraft))
+    throw new Error("GPA 草稿备份数据无效");
   const fields: Record<string, string[]> = {
     courses: ["id", "name", "start", "end", "room", "note", "color"],
     lessons: [
@@ -255,6 +258,8 @@ export function validateBackup(value: unknown): Data {
   )
     throw new Error("偏好设置无效");
   const p = d.preferences;
+  if (p.gpaSettings !== undefined && !validGpaSettings(p.gpaSettings))
+    throw new Error("GPA 计算设置无效");
   if (
     p.aipSelections !== undefined &&
     (!record(p.aipSelections) ||

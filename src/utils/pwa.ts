@@ -1,39 +1,53 @@
+let waitingWorker: ServiceWorker | null = null;
+let refreshRequested = false;
+const listeners = new Set<() => void>();
+export const getUpdateReady = () => waitingWorker !== null;
+export const subscribeUpdate = (listener: () => void) => {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+};
+export function applyUpdate() {
+  if (!waitingWorker) return;
+  refreshRequested = true;
+  waitingWorker.postMessage("SKIP_WAITING");
+}
 export function registerOffline() {
   if ("__TAURI_INTERNALS__" in window) return;
   if (!import.meta.env.PROD || !("serviceWorker" in navigator)) return;
-  window.addEventListener("load", () => {
+  const start = () => {
     navigator.serviceWorker
-      .register(`${import.meta.env.BASE_URL}sw.js`)
+      .register(`${import.meta.env.BASE_URL}sw.js`, { updateViaCache: "none" })
       .then((registration) => {
-        const offerUpdate = (worker: ServiceWorker | null) => {
-          if (
-            worker &&
-            navigator.serviceWorker.controller &&
-            confirm(
-              "速度工具箱有新版本。保存好正在输入的内容后，是否刷新更新？",
-            )
-          ) {
-            worker.postMessage("SKIP_WAITING");
-          }
+        const offer = (worker: ServiceWorker | null) => {
+          if (!worker || !navigator.serviceWorker.controller) return;
+          waitingWorker = worker;
+          listeners.forEach((listener) => listener());
         };
-        offerUpdate(registration.waiting);
+        offer(registration.waiting);
         registration.addEventListener("updatefound", () => {
           const worker = registration.installing;
           worker?.addEventListener("statechange", () => {
-            if (worker.state === "installed") offerUpdate(worker);
+            if (worker.state === "installed") offer(worker);
           });
         });
-        let refreshing = false;
-        const hadController = !!navigator.serviceWorker.controller;
         navigator.serviceWorker.addEventListener("controllerchange", () => {
-          if (!refreshing && hadController) {
-            refreshing = true;
+          // A different tab may activate a worker: never refresh this tab's editor.
+          if (refreshRequested) {
+            refreshRequested = false;
             location.reload();
           }
+        });
+        document.addEventListener("visibilitychange", () => {
+          if (document.visibilityState === "visible")
+            void registration.update().catch(() => {});
         });
       })
       .catch((error) =>
         console.warn("离线缓存暂不可用，网页功能仍可使用。", error),
       );
-  });
+  };
+  if (document.readyState === "complete") start();
+  else window.addEventListener("load", start, { once: true });
 }
