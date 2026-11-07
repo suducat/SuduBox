@@ -64,3 +64,24 @@ it("首次缓存安装不显示升级提示", async () => {
   await Promise.resolve();
   expect(pwa.getUpdateReady()).toBe(false);
 });
+
+it("其他标签已激活后，本标签点更新仍能主动刷新", async () => {
+  const worker = { state: "installed", postMessage: vi.fn() };
+  const sw = Object.assign(new EventTarget(), {
+    controller: {},
+    register: vi.fn(async () =>
+      Object.assign(new EventTarget(), { waiting: worker, installing: null }),
+    ),
+  });
+  vi.stubGlobal("navigator", { serviceWorker: sw });
+  const pwa = await import("./pwa");
+  pwa.registerOffline();
+  await Promise.resolve();
+  await Promise.resolve();
+  worker.state = "activated";
+  sw.dispatchEvent(new Event("controllerchange"));
+  expect(location.reload).not.toHaveBeenCalled();
+  pwa.applyUpdate();
+  expect(location.reload).toHaveBeenCalledTimes(1);
+  expect(worker.postMessage).not.toHaveBeenCalled();
+});

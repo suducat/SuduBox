@@ -10,6 +10,11 @@ export const subscribeUpdate = (listener: () => void) => {
 };
 export function applyUpdate() {
   if (!waitingWorker) return;
+  if (waitingWorker.state === "activated") {
+    // Another tab already activated it; this tab still needs its own explicit reload.
+    location.reload();
+    return;
+  }
   refreshRequested = true;
   waitingWorker.postMessage("SKIP_WAITING");
 }
