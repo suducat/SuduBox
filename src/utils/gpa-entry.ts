@@ -1,3 +1,4 @@
+import { supplementalGpaCourses } from "../data/gpa-supplement";
 import { gpaCourses, type GpaCourse } from "../data/gpa-courses";
 import { gradePoints, type LetterGrade } from "../data/gpa-policy";
 import { rowGrade, type GpaRow } from "./gpa";
@@ -99,7 +100,7 @@ export function appendUnique(existing: GpaRow[], incoming: GpaRow[]) {
 export function courseChoices(settings: GpaSettings) {
   const result: GpaCourse[] = [];
   // Prefer the student's grade, but allow explicitly selecting a course in another grade.
-  const courses = gpaCourses
+  const courses = [...gpaCourses, ...supplementalGpaCourses]
     .filter((c) => c.track === settings.track)
     .sort(
       (a, b) =>
@@ -116,8 +117,10 @@ export function courseChoices(settings: GpaSettings) {
   return result;
 }
 export function matchCourse(name: string, settings: GpaSettings) {
-  const choices = courseChoices(settings).filter(
-    (c) => courseKey(c.name) === courseKey(name),
+  const choices = courseChoices(settings).filter((c) =>
+    [c.name, ...(c.aliases ?? [])].some(
+      (alias) => courseKey(alias) === courseKey(name),
+    ),
   );
   const current = choices.filter((c) => c.grade === settings.grade);
   return current.length === 1

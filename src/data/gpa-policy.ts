@@ -65,3 +65,9 @@ export const thresholds: Record<
     [0, "F"],
   ],
 };
+
+export const categoryLabels: Record<GpaCategory, string> = {
+  H: "荣誉课程",
+  P: "预备课程",
+  CH: "中方课程",
+};

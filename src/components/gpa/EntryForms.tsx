@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { CoursePicker } from "./Inputs";
 import type { GpaCourse } from "../../data/gpa-courses";
-import type { GpaCategory } from "../../data/gpa-policy";
+import { categoryLabels, type GpaCategory } from "../../data/gpa-policy";
 import { rowGrade, type GpaRow } from "../../utils/gpa";
 import {
   courseChoices,
@@ -20,6 +20,7 @@ interface Entry {
   categoryKnown: boolean;
   creditsKnown: boolean;
   manual: boolean;
+  creditOnly?: boolean;
 }
 function makeEntry(name: string, settings: GpaSettings): Entry {
   const course = matchCourse(name, settings);
@@ -27,8 +28,9 @@ function makeEntry(name: string, settings: GpaSettings): Entry {
     ? {
         row: fromCourse(course, settings, uid()),
         categoryKnown: true,
-        creditsKnown: true,
-        manual: false,
+        creditsKnown: !course.needsCreditConfirmation,
+        manual: !!course.needsCreditConfirmation,
+        creditOnly: !!course.needsCreditConfirmation,
       }
     : {
         row: {
@@ -65,27 +67,34 @@ function Metadata({
   return (
     <div className="gpa-missing">
       <div className="form-grid">
-        <label>
-          课程类别
-          <select
-            required
-            value={entry.categoryKnown ? entry.row.category : ""}
-            onChange={(e) =>
-              onChange({
-                ...entry,
-                categoryKnown: !!e.target.value,
-                row: { ...entry.row, category: e.target.value as GpaCategory },
-              })
-            }
-          >
-            <option value="" disabled>
-              请选择类别
-            </option>
-            {["H", "P", "CH"].map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </select>
-        </label>
+        {!entry.creditOnly && (
+          <label>
+            课程类别
+            <select
+              required
+              value={entry.categoryKnown ? entry.row.category : ""}
+              onChange={(e) =>
+                onChange({
+                  ...entry,
+                  categoryKnown: !!e.target.value,
+                  row: {
+                    ...entry.row,
+                    category: e.target.value as GpaCategory,
+                  },
+                })
+              }
+            >
+              <option value="" disabled>
+                请选择类别
+              </option>
+              {["H", "P", "CH"].map((c) => (
+                <option key={c} value={c}>
+                  {categoryLabels[c as GpaCategory]}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
         <label>
           本学期学分
           <input
@@ -106,19 +115,21 @@ function Metadata({
           />
         </label>
       </div>
-      <label className="check">
-        <input
-          type="checkbox"
-          checked={entry.row.passFail}
-          onChange={(e) =>
-            onChange({
-              ...entry,
-              row: { ...entry.row, passFail: e.target.checked },
-            })
-          }
-        />
-        Pass/Fail，不计入 GPA
-      </label>
+      {!entry.creditOnly && (
+        <label className="check">
+          <input
+            type="checkbox"
+            checked={entry.row.passFail}
+            onChange={(e) =>
+              onChange({
+                ...entry,
+                row: { ...entry.row, passFail: e.target.checked },
+              })
+            }
+          />
+          Pass/Fail，不计入 GPA
+        </label>
+      )}
     </div>
   );
 }
@@ -144,8 +155,9 @@ export function AddCourse({
     setEntry({
       row: fromCourse(course, settings, uid()),
       categoryKnown: true,
-      creditsKnown: true,
-      manual: false,
+      creditsKnown: !course.needsCreditConfirmation,
+      manual: !!course.needsCreditConfirmation,
+      creditOnly: !!course.needsCreditConfirmation,
     });
     setError("");
   };
@@ -197,7 +209,11 @@ export function AddCourse({
         />
       </label>
       {entry && (!entry.categoryKnown || !entry.creditsKnown) && (
-        <p className="gpa-hint">目录未收录，请补充类别和学分。</p>
+        <p className="gpa-hint">
+          {entry.creditOnly
+            ? "这门课的学分还未核实，请按学校成绩单填写。"
+            : "请补充这门课的类别和学分。"}
+        </p>
       )}
       {entry && entry.manual && <Metadata entry={entry} onChange={setEntry} />}
       {live && entry && ready(entry) && (
@@ -311,13 +327,17 @@ export function BulkEntry({
           </div>
           {ready(e) && (
             <small>
-              {e.row.category} · {e.row.credits.toFixed(2)} 学分
+              {categoryLabels[e.row.category]} · {e.row.credits.toFixed(2)} 学分
               {e.row.passFail ? " · Pass/Fail，不计入" : ""}
             </small>
           )}
           <details open={e.manual}>
             <summary>
-              {ready(e) ? "修正课程信息" : "请补充未确认的类别和学分"}
+              {ready(e)
+                ? "调整课程信息"
+                : e.creditOnly
+                  ? "请填写课程学分"
+                  : "请补充类别和学分"}
             </summary>
             <CoursePicker
               courses={courseChoices(settings)}
@@ -331,8 +351,9 @@ export function BulkEntry({
                     letter: e.row.letter,
                   },
                   categoryKnown: true,
-                  creditsKnown: true,
-                  manual: false,
+                  creditsKnown: !c.needsCreditConfirmation,
+                  manual: !!c.needsCreditConfirmation,
+                  creditOnly: !!c.needsCreditConfirmation,
                 })
               }
               onCustom={(name) => {

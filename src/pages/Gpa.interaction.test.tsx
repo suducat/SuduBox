@@ -77,6 +77,90 @@ beforeEach(() => {
 });
 afterEach(cleanup);
 describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
+  it("计算设置只显示年级与课程体系按钮，保留旧范围和已有成绩", async () => {
+    const data = emptyData();
+    data.preferences.gpaSettings = {
+      year: "2025–2026",
+      grade: "Y11",
+      track: "AP",
+      period: "S2Final",
+      mode: "draft",
+    };
+    data.gpaDraft = [
+      {
+        id: "existing",
+        name: "AP Biology",
+        year: "2025–2026",
+        grade: "Y11",
+        period: "S2Final",
+        category: "H",
+        score: 98,
+        letter: null,
+        credits: 1,
+        included: true,
+        passFail: false,
+      },
+    ];
+    await mount(data);
+    fireEvent.click(screen.getByText("计算设置", { exact: true }));
+    for (const label of ["学年", "成绩阶段", "查看内容", "快速估算草稿"])
+      expect(screen.queryByText(label, { exact: true })).toBeNull();
+    expect(
+      screen.getByRole("button", { name: "高二" }).getAttribute("aria-pressed"),
+    ).toBe("true");
+    fireEvent.click(screen.getByRole("button", { name: "高一" }));
+    await waitFor(() =>
+      expect(current.preferences.gpaSettings?.grade).toBe("Y10"),
+    );
+    expect(current.gpaDraft?.[0].score).toBe(98);
+    fireEvent.click(screen.getByRole("button", { name: "高二" }));
+    await waitFor(() =>
+      expect(
+        screen.getByRole("textbox", { name: "AP Biology 成绩" }),
+      ).toBeTruthy(),
+    );
+  });
+  it("Psychology 可搜索，只补充学分后添加，不伪造官方学分", async () => {
+    await mount();
+    fireEvent.click(screen.getByRole("button", { name: "添加课程" }));
+    const picker = screen.getByRole("combobox", { name: "搜索课程" });
+    fireEvent.focus(picker);
+    fireEvent.change(picker, { target: { value: "psych" } });
+    fireEvent.click(screen.getByRole("option", { name: /^AP Psychology/ }));
+    fireEvent.change(screen.getByPlaceholderText("例如 98、88/A- 或 A-"), {
+      target: { value: "86/B+" },
+    });
+    expect(
+      (screen.getByRole("button", { name: "确认添加" }) as HTMLButtonElement)
+        .disabled,
+    ).toBe(true);
+    expect(screen.queryByLabelText("课程类别")).toBeNull();
+    fireEvent.change(screen.getByLabelText("本学期学分"), {
+      target: { value: "1" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "确认添加" }));
+    await waitFor(() =>
+      expect(current.gpaDraft?.[0]).toMatchObject({
+        name: "AP Psychology",
+        category: "H",
+        credits: 1,
+        score: 86,
+        letter: "B+",
+      }),
+    );
+  });
+  it("中方课程类别在课程详情中显示中文，内部备份代码不变", async () => {
+    await mount();
+    await addCourse("Chinese", "90");
+    fireEvent.click(
+      screen.getByRole("button", { name: "Chinese" }),
+    );
+    expect(
+      (screen.getByRole("option", { name: "中方课程" }) as HTMLOptionElement)
+        .value,
+    ).toBe("CH");
+    expect(current.gpaDraft?.[0].category).toBe("CH");
+  });
   it("A/B/D/F：连续添加、直接改分、刷新恢复，正式记录不被草稿覆盖", async () => {
     const data = emptyData();
     data.gpa = [
@@ -155,10 +239,9 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     const unknown = screen
       .getByText("AP Psychology", { exact: true })
       .closest(".gpa-preview")!;
-    fireEvent.change(
-      within(unknown as HTMLElement).getByLabelText("课程类别"),
-      { target: { value: "H" } },
-    );
+    expect(
+      within(unknown as HTMLElement).queryByLabelText("课程类别"),
+    ).toBeNull();
     const credits = within(unknown as HTMLElement).getByLabelText("本学期学分");
     await userEvent.setup().type(credits, "0.5");
     expect((unknown.querySelector("details") as HTMLDetailsElement).open).toBe(
@@ -183,7 +266,7 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     fireEvent.click(screen.getByRole("button", { name: "应用修改" }));
     await waitFor(() => expect(current.gpaDraft?.[0].credits).toBe(0.5));
     fireEvent.click(screen.getByRole("button", { name: "更多操作" }));
-    fireEvent.click(screen.getByRole("button", { name: "保存到学期成绩" }));
+    fireEvent.click(screen.getByRole("button", { name: "保存本次成绩" }));
     expect(current.gpa ?? []).toHaveLength(0);
     const save = screen.getByRole("button", { name: "确认保存" });
     fireEvent.click(save);
@@ -198,12 +281,12 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     expect(current.gpa?.[0].letter).toBe("A+");
     expect(current.gpa?.[0].score).toBe(88);
     fireEvent.click(screen.getByRole("button", { name: "更多操作" }));
-    fireEvent.click(screen.getByRole("button", { name: "保存到学期成绩" }));
+    fireEvent.click(screen.getByRole("button", { name: "保存本次成绩" }));
     fireEvent.click(screen.getByRole("button", { name: "确认保存" }));
     await waitFor(() => expect(screen.queryByRole("dialog")).toBeNull());
     expect(current.gpa?.[0].score).toBe(88);
     fireEvent.click(screen.getByRole("button", { name: "更多操作" }));
-    fireEvent.click(screen.getByRole("button", { name: "保存到学期成绩" }));
+    fireEvent.click(screen.getByRole("button", { name: "保存本次成绩" }));
     fireEvent.click(
       screen.getByRole("checkbox", { name: /更新 1 门同名正式成绩/ }),
     );

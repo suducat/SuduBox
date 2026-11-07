@@ -1,4 +1,5 @@
 import { useEffect, useId, useState } from "react";
+import { categoryLabels } from "../../data/gpa-policy";
 import type { GpaCourse } from "../../data/gpa-courses";
 import { gradeText, parseGradeInput } from "../../utils/gpa-entry";
 import type { GpaRow } from "../../utils/gpa";
@@ -26,7 +27,9 @@ export function CoursePicker({
     if (value) setQuery(value);
   }, [value]);
   const options = courses.filter((c) =>
-    c.name.toLowerCase().includes(query.trim().toLowerCase()),
+    [c.name, ...(c.aliases ?? [])].some((name) =>
+      name.toLowerCase().includes(query.trim().toLowerCase()),
+    ),
   );
   const select = (c: GpaCourse) => {
     onSelect(c);
@@ -103,7 +106,8 @@ export function CoursePicker({
             >
               {c.name}
               <small>
-                {c.grade} · {c.category}
+                {categoryLabels[c.category]}
+                {c.needsCreditConfirmation ? " · 请确认学分" : ""}
                 {c.condition ? ` · ${c.condition}` : ""}
               </small>
             </button>

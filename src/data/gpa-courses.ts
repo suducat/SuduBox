@@ -9,6 +9,8 @@ export interface GpaCourse {
   included: boolean;
   passFail: boolean;
   condition?: string;
+  aliases?: string[];
+  needsCreditConfirmation?: boolean;
 }
 export const policyInfo = {
   applies: "2023年秋季及以后入学",

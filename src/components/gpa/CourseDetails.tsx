@@ -3,6 +3,7 @@ import type { GpaRow } from "../../utils/gpa";
 import { rowGrade } from "../../utils/gpa";
 import {
   gradePoints,
+  categoryLabels,
   type GpaCategory,
   type LetterGrade,
 } from "../../data/gpa-policy";
@@ -20,7 +21,7 @@ export function CourseDetails({
   return (
     <div className="gpa-course-details">
       <p>
-        {row.category} 类 · {row.credits.toFixed(2)} 学分 · 等级{" "}
+        {categoryLabels[row.category]} · {row.credits.toFixed(2)} 学分 · 等级{" "}
         {result.letter ?? "未录入"} · GPA 贡献{" "}
         {row.included && !row.passFail ? (result.points ?? 0) * row.credits : 0}{" "}
         加权绩点
@@ -69,7 +70,9 @@ export function CourseDetails({
               }
             >
               {["H", "P", "CH"].map((c) => (
-                <option key={c}>{c}</option>
+                <option key={c} value={c}>
+                  {categoryLabels[c as GpaCategory]}
+                </option>
               ))}
             </select>
           </label>

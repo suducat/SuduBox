@@ -29,8 +29,6 @@ export default function Gpa() {
   const [settings, setSettings] = useState(() =>
     initialGpaSettings(data.preferences),
   );
-  const [yearText, setYearText] = useState(settings.year),
-    [yearError, setYearError] = useState("");
   const [add, setAdd] = useState(false),
     [bulk, setBulk] = useState(false),
     [remove, setRemove] = useState<string | null>(null);
@@ -144,10 +142,7 @@ export default function Gpa() {
       <PageHead title="AIP GPA 计算器" description="输入成绩，看看你的 GPA。" />
       <section className="gpa-result" aria-label="当前 GPA">
         <div>
-          <span>
-            {quick ? "快速估算" : "学期成绩"}
-            {settings.period === "S1Midterm" ? " · 期中" : ""}
-          </span>
+          <span>{quick ? "我的 GPA" : "已保存的 GPA"}</span>
           <div className="gpa-number" aria-live="polite">
             {formatGpa(result.gpa)}
             <small> / 4.30</small>
@@ -157,91 +152,51 @@ export default function Gpa() {
             {result.credits.toFixed(2)} 学分
           </p>
         </div>
-        <small className="gpa-save-state">
-          {quick ? "草稿自动保存" : "修改自动保存"}
-          <span aria-hidden="true"> · </span>
-          {settings.grade} · {settings.year} · {periods[settings.period]}
-        </small>
+        <small className="gpa-save-state">自动保存到本机</small>
       </section>
+      {!quick && (
+        <button onClick={() => changeSettings({ mode: "draft" })}>
+          返回当前计算
+        </button>
+      )}
       <details className="gpa-disclosure">
         <summary>计算设置</summary>
-        <div className="form-grid">
-          <label>
-            学年
-            <input
-              value={yearText}
-              placeholder="2026–2027"
-              aria-invalid={!!yearError}
-              onChange={(e) => {
-                setYearText(e.target.value);
-                setYearError("");
-              }}
-              onBlur={() => {
-                if (/^\d{4}[–-]\d{4}$/.test(yearText)) {
-                  changeSettings({ year: yearText });
-                  setYearError("");
-                } else setYearError("请填写如 2026–2027；当前仍使用原学年");
-              }}
-            />
-          </label>
-          <label>
-            年级
-            <select
-              value={settings.grade}
-              onChange={(e) =>
-                changeSettings({ grade: e.target.value as GpaRow["grade"] })
-              }
-            >
-              {["Y10", "Y11", "Y12"].map((g) => (
-                <option key={g}>{g}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            课程路径
-            <select
-              value={settings.track}
-              onChange={(e) =>
-                changeSettings({
-                  track: e.target.value as GpaSettings["track"],
-                })
-              }
-            >
-              <option>AP</option>
-              <option>A-Level</option>
-            </select>
-          </label>
-          <label>
-            成绩阶段
-            <select
-              value={settings.period}
-              onChange={(e) =>
-                changeSettings({ period: e.target.value as GpaRow["period"] })
-              }
-            >
-              {Object.entries(periods).map(([key, label]) => (
-                <option key={key} value={key}>
-                  {label}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            查看内容
-            <select
-              value={settings.mode}
-              onChange={(e) =>
-                changeSettings({ mode: e.target.value as GpaSettings["mode"] })
-              }
-            >
-              <option value="draft">快速估算草稿</option>
-              <option value="saved">正式学期成绩</option>
-            </select>
-          </label>
-        </div>
-        {yearError && <p role="alert">{yearError}</p>}
+        <fieldset className="choice-fieldset">
+          <legend>年级</legend>
+          <div className="choice-buttons">
+            {(
+              [
+                ["Y10", "高一"],
+                ["Y11", "高二"],
+                ["Y12", "高三"],
+              ] as const
+            ).map(([value, label]) => (
+              <button
+                key={value}
+                aria-pressed={settings.grade === value}
+                onClick={() => changeSettings({ grade: value })}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+        <fieldset className="choice-fieldset">
+          <legend>课程体系</legend>
+          <div className="choice-buttons">
+            {(["AP", "A-Level"] as const).map((track) => (
+              <button
+                key={track}
+                aria-pressed={settings.track === track}
+                onClick={() => changeSettings({ track })}
+              >
+                {track}
+              </button>
+            ))}
+          </div>
+        </fieldset>
         <p className="gpa-hint">
-          设置会记住。更换范围不会搬动已有成绩；课程学分使用所选学期的目录。
+          用于推荐课程。类别和学分会自动填入，也可以点课程名调整。
         </p>
       </details>
       <div className="gpa-actions">
@@ -285,7 +240,7 @@ export default function Gpa() {
                     setMenu(false);
                   }}
                 >
-                  保存到学期成绩
+                  保存本次成绩
                 </button>
               )}
               <button
@@ -398,9 +353,7 @@ export default function Gpa() {
       )}
       <details className="gpa-disclosure">
         <summary>更多统计</summary>
-        <p className="gpa-hint">
-          仅统计已保存的最终成绩，未录入学期不会视为完成。期中和草稿不计入。
-        </p>
+        <p className="gpa-hint">按已保存成绩汇总，未录入的成绩不计入。</p>
         {official.some((r) => r.period !== "S1Midterm") ? (
           <div className="gpa-stats">
             <p>
@@ -414,7 +367,7 @@ export default function Gpa() {
             </p>
           </div>
         ) : (
-          <p>保存最终学期成绩后，这里会显示学年与累计统计。</p>
+          <p>保存成绩后可查看统计。</p>
         )}
       </details>
       <details className="gpa-disclosure">
@@ -430,7 +383,6 @@ export default function Gpa() {
               <button
                 key={`${r.year}|${r.grade}|${r.period}`}
                 onClick={() => {
-                  setYearText(r.year);
                   changeSettings({
                     year: r.year,
                     grade: r.grade,
@@ -446,7 +398,7 @@ export default function Gpa() {
         )}
         {!quick && (
           <button onClick={() => changeSettings({ mode: "draft" })}>
-            返回估算草稿
+            返回当前计算
           </button>
         )}
       </details>
@@ -461,8 +413,8 @@ export default function Gpa() {
           {result.credits.toFixed(2)} = {formatGpa(result.gpa)}
         </p>
         <p>
-          学校等级优先。空成绩、零学分、Pass/Fail 不计入；CH
-          学术课程计入。期中只作阶段估算，不与最终成绩再次平均。
+          学校等级优先。空成绩、零学分、Pass/Fail
+          不计入；中方学术课程计入。期中只作阶段估算，不与最终成绩再次平均。
         </p>
         <p>
           {policyInfo.applies}；{policyInfo.source}。{policyInfo.revision}。
@@ -494,7 +446,7 @@ export default function Gpa() {
       {remove && (
         <Confirm
           title="删除成绩"
-          description="只删除当前列表中的这条成绩，不影响课表或另一份草稿/正式记录。"
+          description="只删除这条成绩，不影响课表或其他已保存记录。"
           close={() => setRemove(null)}
           onConfirm={async () => {
             if (await apply((list) => list.filter((r) => r.id !== remove)))
@@ -504,7 +456,7 @@ export default function Gpa() {
       )}
       {confirmSave && (
         <Modal
-          title="保存到学期成绩"
+          title="保存本次成绩"
           close={() => {
             if (!saving) setConfirmSave(false);
           }}
@@ -523,7 +475,7 @@ export default function Gpa() {
               更新 {duplicates} 门同名正式成绩（不勾选则保留原记录）
             </label>
           )}
-          <p>正式成绩与草稿分开保存；本次保存后仍保留草稿，方便继续估算。</p>
+          <p>保存后仍可继续修改当前计算，不会自动改动已保存记录。</p>
           <button
             className="primary"
             disabled={saving}
@@ -547,7 +499,7 @@ export default function Gpa() {
                 });
                 if (ok) {
                   setConfirmSave(false);
-                  toast("学期成绩已保存，估算草稿仍保留");
+                  toast("已保存，当前计算仍可继续修改");
                 }
               } finally {
                 saveLock.current = false;
@@ -565,7 +517,7 @@ export default function Gpa() {
             {formatGpa(result.gpa)} →{" "}
             <strong>{formatGpa(simulated.gpa)}</strong>
           </p>
-          <p>仅预览，不改动草稿或正式成绩。</p>
+          <p>仅预览，不改动已有成绩。</p>
           <label className="check">
             <input
               type="checkbox"
