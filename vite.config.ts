@@ -10,7 +10,7 @@ function offlineShell(): Plugin {
       const assets = [
         ...Object.keys(bundle),
         "index.html",
-        "icon.svg",
+        "favicon.png",
         "icon-192.png",
         "icon-512.png",
         "manifest.webmanifest",

@@ -1,3 +1,4 @@
+import type { GpaRow } from "../utils/gpa";
 export interface Course {
   specificDate?: string;
   teacher?: string;
@@ -109,6 +110,7 @@ export interface Preferences {
   longMinutes: number;
 }
 export interface Data {
+  gpa?: GpaRow[];
   courses: Course[];
   lessons: Lesson[];
   notes: Note[];

@@ -1,3 +1,5 @@
+import { Author } from "../components/Author";
+import { APP_VERSION } from "../data/version";
 import { showGuide } from "../components/Onboarding";
 import { SafeForm } from "../components/SafeForm";
 import { useState, useEffect } from "react";
@@ -141,9 +143,7 @@ export function Preferences() {
         <Panel title="数据保存在这里">
           <div className="inline">
             <ShieldCheck size={24} />
-            <p>
-              记录保存在当前设备。更换设备或清除网站数据前，请先备份。
-            </p>
+            <p>记录保存在当前设备。更换设备或清除网站数据前，请先备份。</p>
           </div>
           <a className="button" href="#/backup">
             前往数据备份与恢复 →
@@ -164,7 +164,7 @@ export function Backup() {
     d.notes.length +
     d.exams.length +
     d.words.length +
-    d.focus.length;
+    d.focus.length + (d.gpa?.length ?? 0);
   return (
     <>
       <PageHead
@@ -271,6 +271,7 @@ export function Backup() {
             <span>{pending.exams.length} 场考试</span>
             <span>{pending.words.length} 个单词</span>
             <span>{pending.focus.length} 次专注</span>
+            <span>{pending.gpa?.length ?? 0} 条成绩</span>
           </div>
           <p className="warning">
             当前 {count(data)}{" "}
@@ -340,25 +341,36 @@ function OfflineStatus() {
 export function About() {
   return (
     <>
-      <PageHead
-        title="关于 速度工具箱"
-        description="速度工具箱 · 让学习更简单"
-      />
+      <PageHead title="关于" />
       <section className="panel about-panel">
-        <img src="./icon.svg" width="72" height="72" alt="速度工具箱 标志" />
+        <img
+          src="./icon-512.png"
+          width="88"
+          height="88"
+          alt="速度工具箱 Logo"
+        />
         <h2>
-          速度工具箱 <span className="badge">v1.0.0</span>
+          速度工具箱 / SuduBox <span className="badge">v{APP_VERSION}</span>
         </h2>
-        <p>为中国国际高中学生打造的轻量学习效率工具箱。</p>
-        <a className="button" href="#/author">
-          作者与联系方式
+        <p>为学生做的一些顺手的小工具。</p>
+        <p>
+          课表、作业、成绩和复习，总有些重复的小麻烦。速度工具箱把常用功能放在一起，希望每天能少折腾一点。
+        </p>
+        <p>学习记录保存在这台设备，更换设备或清除网站数据前，请先备份。</p>
+        <a className="button" href="#/backup">
+          数据备份与恢复
         </a>
-        <hr />
-        <h3>数据保存</h3>
-        <p>记录保存在当前设备。清除网站数据或更换设备前，请先导出备份。</p>
-        <a href="#/backup">导出或恢复备份</a>
         <OfflineStatus />
+        <details>
+          <summary>v1.1.0 更新日志</summary>
+          <p>
+            AIP GPA
+            计算器、新版使用向导、音乐角落下一句、合并关于页面，以及新的猫咪工具箱图标。
+          </p>
+          <p>项目源码公开，暂未指定开源许可证。</p>
+        </details>
       </section>
+      <Author />
     </>
   );
 }

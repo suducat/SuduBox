@@ -82,3 +82,14 @@ it("相同实体ID重复提交不会新增记录，题库与恢复点备份可�
       .answer,
   ).toBe("");
 });
+
+it("GPA成绩保存后重新读取并支持备份恢复，不影响便签",async()=>{
+ const base=emptyData();
+ base.gpa=[{id:"gpa-test",name:"Synthetic course",year:"2026–2027",grade:"Y11",period:"S1Final",category:"H",score:88,letter:"A-",credits:1,included:true,passFail:false}];
+ base.notes=[{id:"synthetic-note",text:"Synthetic note",subject:"",date:"2026-11-07",pinned:false,done:false,created:1}];
+ await mutate(()=>base);
+ const restored=validateBackup(JSON.parse(JSON.stringify({version:1,data:await load()})));
+ await mutate(()=>restored);
+ expect((await load()).gpa?.[0].score).toBe(88);
+ expect((await load()).notes[0].id).toBe("synthetic-note");
+});

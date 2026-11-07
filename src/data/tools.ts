@@ -58,7 +58,6 @@ export const tools = [
     icon: GraduationCap,
     group: "学习中心",
     keywords: "成绩 学分 绩点",
-    soon: true,
   },
   {
     id: "exams",
@@ -119,17 +118,10 @@ export const tools = [
     keywords: "导出 导入 JSON",
   },
   {
-    id: "author",
-    name: "作者",
-    icon: UserRound,
-    group: "设置",
-    keywords: "作者 suducat GitHub 微信 联系方式 反馈",
-  },
-  {
     id: "about",
-    name: "关于速度工具箱",
+    name: "关于",
     icon: Info,
     group: "设置",
-    keywords: "速度工具箱 SuduBox 速渡盒 隐私 离线",
+    keywords: "速度工具箱 SuduBox 速渡盒 隐私 离线 作者 suducat 微信 反馈",
   },
 ];

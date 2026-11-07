@@ -2847,3 +2847,19 @@ details .form {
 [data-theme="dark"] .choice-buttons button[aria-pressed="true"] {
   background: #263758;
 }
+.gpa-table { overflow-x:auto; margin:20px 0; }
+.gpa-table table { width:100%; border-collapse:collapse; min-width:600px; }
+.gpa-table th,.gpa-table td { text-align:left; padding:12px; border-bottom:1px solid var(--border); }
+.gpa-table small { display:block; }
+.music-next { display:flex; align-items:center; gap:6px; float:left; }
+.guide-count { color:var(--muted); font-size:13px; }
+
+.gpa-page .form-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.gpa-page label:not(.check) { display:flex; flex-direction:column; gap:7px; min-width:0; }
+.gpa-page label > input,.gpa-page label > select { width:100%; }
+.gpa-page .toolbar { flex-wrap:wrap; }
+@media(max-width:600px) { .gpa-page .form-grid { grid-template-columns:minmax(0,1fr); } }
+
+.gpa-page .summary-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:18px 0; }
+.gpa-page > .inline { flex-wrap:wrap; }
+@media(max-width:600px) { .gpa-page .summary-grid { grid-template-columns:minmax(0,1fr); } }

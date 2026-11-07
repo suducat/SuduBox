@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Music2, X } from "lucide-react";
+import { Music2, X, ArrowRight } from "lucide-react";
 import { musicLines } from "../data/music-corner";
 import { randomMusicIndex } from "../utils/music";
 export function MusicCorner() {
@@ -7,6 +7,7 @@ export function MusicCorner() {
     () => localStorage.getItem("sudubox.hideEncouragement") === "1",
   );
   const [index, setIndex] = useState(() => randomMusicIndex(musicLines.length));
+  const [rotation, setRotation] = useState(0);
   useEffect(() => {
     if (hidden) return;
     const timer = window.setInterval(() => {
@@ -14,7 +15,7 @@ export function MusicCorner() {
         setIndex((current) => randomMusicIndex(musicLines.length, current));
     }, 30000);
     return () => window.clearInterval(timer);
-  }, [hidden]);
+  }, [hidden, rotation]);
   if (hidden) return null;
   const line = musicLines[index];
   return (
@@ -36,6 +37,15 @@ export function MusicCorner() {
         </button>
       </div>
       <blockquote>{line.text}</blockquote>
+      <button
+        className="music-next"
+        onClick={() => {
+          setIndex((current) => randomMusicIndex(musicLines.length, current));
+          setRotation((r) => r + 1);
+        }}
+      >
+        下一句 <ArrowRight size={15} />
+      </button>
       <cite className="music-credit">
         {line.artist} ·《{line.song}》
       </cite>

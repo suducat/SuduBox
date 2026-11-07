@@ -17,7 +17,6 @@ export function Author() {
   };
   return (
     <>
-      <PageHead title="作者" />
       <section className="panel author-card">
         <img
           className="author-avatar"
@@ -26,7 +25,7 @@ export function Author() {
           height="112"
           alt="suducat 的 GitHub 头像"
         />
-        <h2>suducat</h2>
+        <h3>suducat</h3>
         <a
           onClick={(event) => void openGithub(event)}
           href="https://github.com/suducat"
@@ -36,7 +35,8 @@ export function Author() {
           <Github size={18} /> github.com/suducat
         </a>
         <div className="author-contact">
-          <h3>联系方式</h3>
+          <h3>问题反馈</h3>
+          <p>发现 Bug，或者有什么好用的功能建议？欢迎告诉我。</p>
           <p>
             <MessageCircle size={18} /> 微信：<strong>Alex_AAj</strong>
           </p>

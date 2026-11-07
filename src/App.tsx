@@ -1,4 +1,4 @@
-import { Author } from "./components/Author";
+import Gpa from "./pages/Gpa";
 import { Onboarding, GUIDE_KEY } from "./components/Onboarding";
 import { useState, useEffect, useRef } from "react";
 import {
@@ -105,12 +105,15 @@ export default function App() {
   }, [searching]);
   useEffect(() => {
     const fn = () => {
-      setRoute(location.hash.slice(2) || "home");
+      const next = location.hash.slice(2) || "home";
+      if (next === "author") history.replaceState(null, "", "#/about");
+      setRoute(next === "author" ? "about" : next);
       setMenu(false);
       setSearching(false);
       setQ("");
       window.scrollTo(0, 0);
     };
+    fn();
     window.addEventListener("hashchange", fn);
     const shortcut = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
@@ -145,7 +148,8 @@ export default function App() {
     settings: <Preferences />,
     backup: <Backup />,
     about: <About />,
-    author: <Author />,
+    author: <About />,
+    gpa: <Gpa />,
     tools: <ToolCenter />,
   };
   const results = tools.filter((t) =>
@@ -163,7 +167,7 @@ export default function App() {
       )}
       <aside className={`sidebar ${menu ? "open" : ""}`}>
         <a href="#/home" className="brand">
-          <img src="./icon.svg" width="38" height="38" alt="" />
+          <img src="./icon-512.png" width="38" height="38" alt="" />
           <span>
             速度工具箱<small>学习工具箱</small>
           </span>
@@ -219,7 +223,7 @@ export default function App() {
         </header>
         <main id="main" className="main-content" key={route}>
           {pages[route] ??
-            (["gpa", "files", "ai"].includes(route) ? (
+            (["files", "ai"].includes(route) ? (
               <ComingSoon id={route} />
             ) : (
               <Empty

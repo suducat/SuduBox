@@ -1,3 +1,4 @@
+import { validGpaRows } from "./gpa";
 import { emptyData, type Course, type Data, type Exam } from "../types";
 export const localDate = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -134,6 +135,8 @@ export function validateBackup(value: unknown): Data {
   if (!record(value) || value.version !== 1 || !record(value.data))
     throw new Error("不支持的备份格式或版本");
   const d = value.data;
+  if (d.gpa !== undefined && !validGpaRows(d.gpa))
+    throw new Error("GPA 备份数据无效");
   const fields: Record<string, string[]> = {
     courses: ["id", "name", "start", "end", "room", "note", "color"],
     lessons: [
@@ -366,12 +369,19 @@ export async function download(
     try {
       const { save } = await import("@tauri-apps/plugin-dialog");
       const { writeTextFile } = await import("@tauri-apps/plugin-fs");
-      const path = await save({ defaultPath: name, filters: [{ name: "导出文件", extensions: [name.split(".").pop() || "json"] }] });
+      const path = await save({
+        defaultPath: name,
+        filters: [
+          { name: "导出文件", extensions: [name.split(".").pop() || "json"] },
+        ],
+      });
       if (!path) return false;
       await writeTextFile(path, content);
       return true;
     } catch (error) {
-      alert(`保存失败，原有数据未更改：${error instanceof Error ? error.message : String(error)}`);
+      alert(
+        `保存失败，原有数据未更改：${error instanceof Error ? error.message : String(error)}`,
+      );
       return false;
     }
   }

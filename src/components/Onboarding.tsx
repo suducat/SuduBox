@@ -10,6 +10,9 @@ export function Onboarding({ close }: { close: () => void }) {
   const current = guideSteps[step];
   return (
     <Modal title="新手向导" close={close}>
+      <p className="guide-count">
+        第 {step + 1} 步 / 共 {guideSteps.length} 步
+      </p>
       <div
         className="guide-progress"
         aria-label={`第 ${step + 1} 步，共 ${guideSteps.length} 步`}
@@ -35,7 +38,7 @@ export function Onboarding({ close }: { close: () => void }) {
         ))}
       </div>
       <div className="guide-controls">
-        <button onClick={close}>稍后再看</button>
+        <button onClick={close}>跳过</button>
         <div className="inline">
           {step > 0 && (
             <button onClick={() => setStep((s) => s - 1)}>上一步</button>
