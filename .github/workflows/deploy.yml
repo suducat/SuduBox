@@ -13,6 +13,7 @@ jobs:
     permissions:
       contents: read
       pages: read
+      actions: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -29,6 +30,10 @@ jobs:
         env:
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: npm run build -- --base "$PAGES_BASE_PATH/"
+      - name: Retain previous asset generations
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/retain-pages-assets.mjs
       - run: node scripts/check-offline.mjs
       - uses: actions/upload-pages-artifact@v4
         with:

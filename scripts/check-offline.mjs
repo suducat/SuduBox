@@ -18,6 +18,8 @@ const prefix = "sudubox-" + encodeURIComponent(scope) + "-";
 const stores = new Map([
   ["unrelated", new Map()],
   [prefix + "old", new Map()],
+  [prefix + "previous2", new Map()],
+  [prefix + "previous1", new Map()],
   ["sudubox-other-project", new Map()],
 ]);
 const caches = {
@@ -93,6 +95,8 @@ handlers.activate({
 await pending;
 assert(!stores.has(prefix + "old"));
 assert(stores.has("sudubox-other-project"));
+assert(stores.has(prefix + "previous1"));
+assert(stores.has(prefix + "previous2"));
 assert(stores.has("unrelated"));
 console.log("PASS: 更新只清理本应用旧缓存");
 
