@@ -102,7 +102,13 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
       },
     ];
     await mount(data);
-    fireEvent.click(screen.getByText("计算设置", { exact: true }));
+    expect(
+      (
+        screen
+          .getByText("计算设置", { exact: true })
+          .closest("details") as HTMLDetailsElement
+      ).open,
+    ).toBe(true);
     for (const label of ["学年", "成绩阶段", "查看内容", "快速估算草稿"])
       expect(screen.queryByText(label, { exact: true })).toBeNull();
     expect(

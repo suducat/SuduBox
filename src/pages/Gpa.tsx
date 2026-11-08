@@ -159,7 +159,7 @@ export default function Gpa() {
           返回当前计算
         </button>
       )}
-      <details className="gpa-disclosure">
+      <details className="gpa-disclosure" open>
         <summary>计算设置</summary>
         <fieldset className="choice-fieldset">
           <legend>年级</legend>
