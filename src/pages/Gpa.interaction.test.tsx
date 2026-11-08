@@ -120,7 +120,7 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
       ).toBeTruthy(),
     );
   });
-  it("Psychology 可搜索，只补充学分后添加，不伪造官方学分", async () => {
+  it("Psychology 可搜索并自动使用已确认的 1 学分", async () => {
     await mount();
     fireEvent.click(screen.getByRole("button", { name: "添加课程" }));
     const picker = screen.getByRole("combobox", { name: "搜索课程" });
@@ -133,11 +133,9 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     expect(
       (screen.getByRole("button", { name: "确认添加" }) as HTMLButtonElement)
         .disabled,
-    ).toBe(true);
+    ).toBe(false);
     expect(screen.queryByLabelText("课程类别")).toBeNull();
-    fireEvent.change(screen.getByLabelText("本学期学分"), {
-      target: { value: "1" },
-    });
+    expect(screen.queryByLabelText("本学期学分")).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "确认添加" }));
     await waitFor(() =>
       expect(current.gpaDraft?.[0]).toMatchObject({
@@ -152,9 +150,7 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
   it("中方课程类别在课程详情中显示中文，内部备份代码不变", async () => {
     await mount();
     await addCourse("Chinese", "90");
-    fireEvent.click(
-      screen.getByRole("button", { name: "Chinese" }),
-    );
+    fireEvent.click(screen.getByRole("button", { name: "Chinese" }));
     expect(
       (screen.getByRole("option", { name: "中方课程" }) as HTMLOptionElement)
         .value,
@@ -225,7 +221,7 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     fireEvent.change(screen.getByRole("textbox", { name: "多门成绩" }), {
       target: {
         value:
-          "AP Biology 98/A+\nAP Calculus BC 88/A-\nAP Physics 2 90/A\nAP Psychology 86/B+\nAP Biology 98/A+\n错误行",
+          "AP Biology 98/A+\nAP Calculus BC 88/A-\nAP Physics 2 90/A\nMy Elective 86/B+\nAP Biology 98/A+\n错误行",
       },
     });
     fireEvent.click(screen.getByRole("button", { name: "预览成绩" }));
@@ -237,11 +233,12 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     }) as HTMLButtonElement;
     expect(submit.disabled).toBe(true);
     const unknown = screen
-      .getByText("AP Psychology", { exact: true })
+      .getByText("My Elective", { exact: true })
       .closest(".gpa-preview")!;
-    expect(
-      within(unknown as HTMLElement).queryByLabelText("课程类别"),
-    ).toBeNull();
+    fireEvent.change(
+      within(unknown as HTMLElement).getByLabelText("课程类别"),
+      { target: { value: "H" } },
+    );
     const credits = within(unknown as HTMLElement).getByLabelText("本学期学分");
     await userEvent.setup().type(credits, "0.5");
     expect((unknown.querySelector("details") as HTMLDetailsElement).open).toBe(
@@ -251,7 +248,7 @@ describe("GPA 简洁流程（真实 IndexedDB 写入）", () => {
     fireEvent.click(submit);
     await waitFor(() => expect(current.gpaDraft).toHaveLength(4));
     expect(
-      current.gpaDraft?.find((r) => r.name === "AP Psychology")?.credits,
+      current.gpaDraft?.find((r) => r.name === "My Elective")?.credits,
     ).toBe(0.5);
     expect(screen.queryByRole("dialog")).toBeNull();
   });

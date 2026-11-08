@@ -43,7 +43,7 @@ describe("极简成绩输入", () => {
     expect(c.credits).toEqual([1, 1]);
     expect(matchCourse("AP Psychology", settings)).toMatchObject({
       category: "H",
-      needsCreditConfirmation: true,
+      credits: [1, 1],
     });
     expect(matchCourse("psych", settings)?.name).toBe("AP Psychology");
     expect(matchCourse("心理学", settings)?.name).toBe("AP Psychology");
