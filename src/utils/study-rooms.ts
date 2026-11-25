@@ -36,6 +36,25 @@ export function studyRoomsAt(now: Date, data: RoomTimetable = timetable) {
     );
     inBreak = index >= 0;
   }
+  return {
+    ...studyRoomsForSlot(day, slots[index]?.id ?? "", data),
+    time,
+    inBreak,
+  };
+}
+
+/** Query the exact source slot without constructing a date or guessing times. */
+export function studyRoomsForSlot(
+  day: number,
+  id: string,
+  data: RoomTimetable = timetable,
+) {
+  const periods =
+    Number.isInteger(day) && day >= 1 && day <= 5
+      ? (data.days[String(day)] ?? [])
+      : [];
+  const slots = periods;
+  const index = slots.findIndex((slot) => slot.id === id);
   const slot = slots[index];
   const rooms = slot
     ? data.rooms
@@ -66,61 +85,11 @@ export function studyRoomsAt(now: Date, data: RoomTimetable = timetable) {
             a.id.localeCompare(b.id, "zh-CN", { numeric: true }),
         )
     : [];
-  return { weekday: weekdays[day], time, slot, inBreak, rooms };
-}
-
-/** Same-day Beijing range, with an exclusive end and breaks using the next slot. */
-export function studyRoomsBetween(
-  date: string,
-  start: string,
-  end: string,
-  data: RoomTimetable = timetable,
-) {
-  const invalid = (message: string) => ({
-    status: "invalid" as const,
-    message,
-    weekday: "",
-    rooms: [] as ReturnType<typeof studyRoomsAt>["rooms"],
-  });
-  if (
-    !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
-    ![start, end].every((t) => /^([01]\d|2[0-3]):[0-5]\d$/.test(t))
-  )
-    return invalid("请选择有效的日期、开始时间和结束时间。");
-  const instant = new Date(`${date}T${start}:00+08:00`);
-  if (
-    !Number.isFinite(instant.getTime()) ||
-    new Date(instant.getTime() + 8 * 3600000).toISOString().slice(0, 10) !==
-      date
-  )
-    return invalid("请选择有效日期。");
-  if (start >= end)
-    return invalid("结束时间应晚于开始时间；跨日查询请分天进行。");
-  const day = new Date(instant.getTime() + 8 * 3600000).getUTCDay();
-  const slots = day >= 1 && day <= 5 ? (data.days[String(day)] ?? []) : [];
-  const state = studyRoomsAt(instant, data);
-  if (
-    !slots.length ||
-    start < slots[0].start ||
-    end > slots[slots.length - 1].end
-  )
-    return {
-      status: "no-data" as const,
-      message: "所选时间段暂无完整的自习室安排数据",
-      weekday: state.weekday,
-      rooms: [] as typeof state.rooms,
-    };
-  const covered = slots.filter(
-    (slot, i) => start < slot.end && end > (i ? slots[i - 1].end : slot.start),
-  );
   return {
-    status: "ready" as const,
-    message: "",
-    inferred: covered.some((slot) => slot.inferred),
-    weekday: state.weekday,
-    rooms: state.rooms.filter((room) => {
-      const index = data.rooms.indexOf(room.id);
-      return covered.every((slot) => slot.available[index] === true);
-    }),
+    weekday: weekdays[day] ?? "",
+    slot,
+    nextSlot: slots[index >= 0 ? index + 1 : -1],
+    periods,
+    rooms,
   };
 }

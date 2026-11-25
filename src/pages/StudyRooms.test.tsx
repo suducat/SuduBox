@@ -6,6 +6,7 @@ import {
   fireEvent,
   render,
   screen,
+  within,
 } from "@testing-library/react";
 import StudyRooms from "./StudyRooms";
 import { trackUsage } from "../utils/analytics";
@@ -15,57 +16,64 @@ afterEach(() => {
   vi.useRealTimers();
   vi.clearAllMocks();
 });
-it("defaults to auto, runs a local range only on submit, and resumes automatic updates", async () => {
+it("defaults to auto and immediately queries selected weekdays/periods without date inputs", () => {
   vi.useFakeTimers();
   vi.setSystemTime(new Date("2026-11-23T08:10:00+08:00"));
-  render(<StudyRooms />);
+  const { container } = render(<StudyRooms />);
   expect(
     screen
       .getByRole("button", { name: "自动查询" })
       .getAttribute("aria-pressed"),
   ).toBe("true");
-  expect(screen.getByText("3 间可用自习室")).toBeTruthy();
+  expect(screen.getAllByRole("article")).toHaveLength(3);
   expect(screen.queryByText("作息与数据说明")).toBeNull();
-  fireEvent.click(screen.getByRole("button", { name: "手动查询" }));
-  fireEvent.change(screen.getByLabelText("查询日期"), {
-    target: { value: "2026-11-23" },
+  expect(screen.queryByText(/可用至/)).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: "按课表查询" }));
+  expect(
+    container.querySelector('input[type="date"],input[type="time"]'),
+  ).toBeNull();
+  expect(screen.getByRole("combobox", { name: "星期" })).toBeTruthy();
+  expect(screen.getByRole("option", { name: /第 1 节 · 08:10/ })).toBeTruthy();
+  fireEvent.change(screen.getByLabelText("星期"), { target: { value: "2" } });
+  expect(screen.getByRole("option", { name: /第 1 节 · 08:00/ })).toBeTruthy();
+  expect(screen.getAllByRole("article")).toHaveLength(5);
+  fireEvent.change(screen.getByLabelText("时段"), {
+    target: { value: "Lunch" },
   });
-  fireEvent.change(screen.getByLabelText("开始时间"), {
-    target: { value: "09:00" },
-  });
-  fireEvent.change(screen.getByLabelText("结束时间"), {
-    target: { value: "10:00" },
-  });
-  await act(async () => {
-    fireEvent.submit(
-      screen.getByRole("button", { name: "查询自习室" }).closest("form")!,
-    );
-  });
-  expect(screen.getByText("1 间在所选时间段内均可用")).toBeTruthy();
-  expect(trackUsage).toHaveBeenCalledExactlyOnceWith(
-    "study-rooms.manual-query",
-  );
+  expect(screen.getAllByRole("article")).toHaveLength(8);
+  expect(screen.getByText(/原表未明确午休/)).toBeTruthy();
+  expect(trackUsage).toHaveBeenCalledTimes(3);
+  expect(trackUsage).toHaveBeenLastCalledWith("study-rooms.manual-query");
+  vi.setSystemTime(new Date("2026-11-28T12:10:00+08:00"));
   act(() => {
     vi.advanceTimersByTime(30000);
     window.dispatchEvent(new Event("focus"));
   });
-  expect(trackUsage).toHaveBeenCalledTimes(1);
-  expect(screen.getByText("1 间在所选时间段内均可用")).toBeTruthy();
-  fireEvent.change(screen.getByLabelText("开始时间"), {
-    target: { value: "11:00" },
-  });
-  await act(async () => {
-    fireEvent.submit(
-      screen.getByRole("button", { name: "查询自习室" }).closest("form")!,
-    );
-  });
-  expect(screen.getByText(/结束时间应晚于开始时间/)).toBeTruthy();
-  expect(trackUsage).toHaveBeenCalledTimes(1);
-  vi.setSystemTime(new Date("2026-11-23T12:10:00+08:00"));
-  act(() => {
-    window.dispatchEvent(new Event("focus"));
-  });
+  expect(screen.getAllByRole("article")).toHaveLength(8);
+  expect(trackUsage).toHaveBeenCalledTimes(3);
   fireEvent.click(screen.getByRole("button", { name: "自动查询" }));
-  expect(screen.getByText("8 间可用自习室")).toBeTruthy();
-  expect(screen.getByText(/Lunch 午休/)).toBeTruthy();
+  expect(screen.getByText("当前时段暂无自习室安排数据")).toBeTruthy();
+  expect(screen.queryByRole("article")).toBeNull();
+});
+it("shows next-slot status on each room and never calls the last slot free", () => {
+  vi.useFakeTimers();
+  vi.setSystemTime(new Date("2026-11-23T09:00:00+08:00"));
+  render(<StudyRooms />);
+  expect(
+    within(screen.getByRole("article", { name: "教室 5210" })).getByText(
+      "下时段有安排",
+    ),
+  ).toBeTruthy();
+  expect(
+    within(screen.getByRole("article", { name: "教室 5310" })).getByText(
+      "下时段空闲，仍可用",
+    ),
+  ).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: "按课表查询" }));
+  fireEvent.change(screen.getByLabelText("时段"), { target: { value: "9" } });
+  expect(screen.getAllByText("后续暂无安排数据")).toHaveLength(17);
+  expect(screen.queryByText("下时段空闲，仍可用")).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: "自动查询" }));
+  expect(screen.queryByRole("combobox")).toBeNull();
+  expect(screen.getAllByRole("article")).toHaveLength(9);
 });
