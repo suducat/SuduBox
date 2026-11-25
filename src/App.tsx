@@ -1,3 +1,4 @@
+import { StudyRoomsAnnouncement } from "./components/StudyRoomsAnnouncement";
 import StudyRooms from "./pages/StudyRooms";
 import { visitPage } from "./utils/analytics";
 import { UpdateNotice } from "./components/Pwa";
@@ -165,6 +166,7 @@ export default function App() {
   return (
     <div className="app-shell">
       {guide && <Onboarding close={closeGuide} />}
+      {route === "home" && !guide && <StudyRoomsAnnouncement />}
       {menu && (
         <button
           className="sidebar-scrim"

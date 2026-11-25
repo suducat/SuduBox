@@ -28,6 +28,7 @@ export const usageEvents = [
   "words.import",
   "words.review",
   "study-rooms.query",
+  "study-rooms.manual-query",
 ] as const;
 export type UsageEvent = (typeof usageEvents)[number];
 const names = new Set<string>([

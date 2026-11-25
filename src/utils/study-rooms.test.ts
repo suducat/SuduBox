@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { studyRoomData, studyRoomsAt } from "./study-rooms";
+import { studyRoomData, studyRoomsAt, studyRoomsBetween } from "./study-rooms";
 const at = (date: string, time: string) =>
   studyRoomsAt(new Date(`${date}T${time}:00+08:00`));
 describe("study rooms: source and Beijing boundaries", () => {
@@ -115,5 +115,70 @@ describe("study rooms: source and Beijing boundaries", () => {
     expect(
       at("2026-11-23", "16:40").rooms.every((r) => r.until === "17:20"),
     ).toBe(true);
+  });
+});
+
+describe("manual study room ranges", () => {
+  it("requires availability in every overlapping slot, not only the start", () => {
+    const result = studyRoomsBetween("2026-11-23", "09:00", "10:00");
+    expect(result.status).toBe("ready");
+    expect(result.rooms.map((r) => r.id).sort()).toEqual(["5310"]);
+    expect(result.rooms.some((r) => r.id === "5210")).toBe(false);
+  });
+  it("excludes the end boundary but applies next-period availability during a break", () => {
+    expect(
+      studyRoomsBetween("2026-11-23", "09:00", "09:40").rooms.some(
+        (r) => r.id === "5210",
+      ),
+    ).toBe(true);
+    expect(
+      studyRoomsBetween("2026-11-23", "09:00", "09:41").rooms.some(
+        (r) => r.id === "5210",
+      ),
+    ).toBe(false);
+    expect(
+      studyRoomsBetween("2026-11-23", "09:40", "09:45").rooms.map((r) => r.id),
+    ).toEqual(at("2026-11-23", "09:40").rooms.map((r) => r.id));
+  });
+  it("handles lunch merged occupation and consecutive free periods", () => {
+    const lunch = studyRoomsBetween("2026-11-24", "12:10", "14:10");
+    expect(lunch.rooms.map((r) => r.id).sort()).toEqual(
+      studyRoomData.rooms.slice(0, 8),
+    );
+    const across = studyRoomsBetween("2026-11-24", "12:00", "14:20");
+    expect(
+      across.rooms.every((r) => studyRoomData.rooms.indexOf(r.id) < 8),
+    ).toBe(true);
+    expect(
+      studyRoomsBetween("2026-11-23", "15:50", "17:20").rooms,
+    ).toHaveLength(17);
+  });
+  it.each([
+    ["2026-11-28", "09:00", "10:00"],
+    ["2026-11-29", "09:00", "10:00"],
+    ["2026-11-23", "08:00", "09:00"],
+    ["2026-11-24", "07:59", "09:00"],
+    ["2026-11-24", "17:00", "17:21"],
+  ])(
+    "does not return partial data for uncovered range %s %s–%s",
+    (date, start, end) => {
+      expect(studyRoomsBetween(date, start, end)).toMatchObject({
+        status: "no-data",
+        rooms: [],
+      });
+    },
+  );
+  it.each([
+    ["2026-02-30", "09:00", "10:00"],
+    ["bad", "09:00", "10:00"],
+    ["2026-11-23", "25:00", "26:00"],
+    ["2026-11-23", "09:00", "09:00"],
+    ["2026-11-23", "10:00", "09:00"],
+    ["2026-11-23", "23:00", "01:00"],
+  ])("rejects invalid or reversed range %s %s–%s", (date, start, end) => {
+    expect(studyRoomsBetween(date, start, end)).toMatchObject({
+      status: "invalid",
+      rooms: [],
+    });
   });
 });
