@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { useState, useEffect, useRef } from "react";
 import {
   Play,
@@ -67,7 +68,9 @@ export default function Focus() {
               subject: subject.trim(),
               elapsed: 0,
             },
-      })),
+      })).then((ok) => {
+        if (ok) trackUsage("focus.start");
+      }),
     );
   const pause = () =>
     action(() =>

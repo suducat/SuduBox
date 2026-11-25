@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { useEffect, useRef, useState } from "react";
 import {
   Plus,
@@ -104,7 +105,10 @@ export default function Gpa() {
         : { ...d, gpa: fn(d.gpa ?? []) },
     );
   const saveRow = (row: GpaRow) =>
-    apply((list) => list.map((r) => (r.id === row.id ? row : r)));
+    apply((list) => list.map((r) => (r.id === row.id ? row : r))).then((ok) => {
+      if (ok) trackUsage("gpa.calculate");
+      return ok;
+    });
   const addRows = async (incoming: GpaRow[]) => {
     let added = 0;
     const ok = await apply((list) => {
@@ -117,6 +121,7 @@ export default function Gpa() {
       toast("这些课程已经存在，可以直接修改列表中的成绩。");
       return false;
     }
+    trackUsage("gpa.calculate");
     setAdd(false);
     setBulk(false);
     toast(
@@ -304,7 +309,9 @@ export default function Gpa() {
                           list.map((r) =>
                             r.id === row.id ? { ...r, ...values } : r,
                           ),
-                        );
+                        ).then((ok) => {
+                          if (ok) trackUsage("gpa.calculate");
+                        });
                       }}
                     />
                     <small className="gpa-grade-hint">

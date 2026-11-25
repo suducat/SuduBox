@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { OfficialExams } from "../components/OfficialExams";
 import { SafeForm } from "../components/SafeForm";
 import { useState, useEffect, useRef } from "react";
@@ -125,7 +126,10 @@ export function Notes() {
       ],
     }));
     adding.current = false;
-    if (ok) toast("便签已创建，直接输入即可");
+    if (ok) {
+      trackUsage("notes.create");
+      toast("便签已创建，直接输入即可");
+    }
   };
   const list = data.notes
     .filter(
@@ -362,6 +366,7 @@ export function Exams() {
                 }))
               ) {
                 setEdit(null);
+                trackUsage("exams.save");
                 toast("考试已保存");
               }
             }}

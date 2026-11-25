@@ -1,3 +1,4 @@
+import { StudyRoomsCard } from "./StudyRooms";
 import { MusicCorner } from "../components/MusicCorner";
 import { OfficialExams } from "../components/OfficialExams";
 import { schoolState } from "../utils/school";
@@ -345,6 +346,9 @@ export default function Home() {
         <a href="#/tools">
           全部工具 <ArrowRight size={15} />
         </a>
+      </div>
+      <div className="tool-grid">
+        <StudyRoomsCard />
       </div>
       <div className="quick-tools">
         {quick.map((t) => (

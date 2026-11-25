@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { useState, useRef } from "react";
 import { useStore } from "./context";
 import { Panel, Modal, Confirm } from "./UI";
@@ -65,6 +66,7 @@ export function QuestionCards() {
               1,
             );
             if (r.picked[0]) {
+              trackUsage("random.draw");
               setCurrent(r.picked[0]);
               setUsed([...used, r.picked[0]]);
               setShow(false);

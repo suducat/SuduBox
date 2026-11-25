@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { SafeForm, useAsyncGuard } from "../components/SafeForm";
 import { useState } from "react";
 import {
@@ -311,8 +312,10 @@ export default function Words() {
                     },
                   ],
                 }))
-              )
+              ) {
+                trackUsage("words.save");
                 setEdit(null);
+              }
             }}
           >
             <label>
@@ -557,6 +560,7 @@ export default function Words() {
                           ],
                         }))
                       ) {
+                        if (rows.length) trackUsage("words.import");
                         toast(`已导入 ${rows.length} 个单词`);
                         setImporting(false);
                         setRaw("");
@@ -580,7 +584,10 @@ export default function Words() {
             <>
               <button
                 className="flashcard"
-                onClick={() => setFlipped(!flipped)}
+                onClick={() => {
+                  setFlipped(!flipped);
+                  trackUsage("words.review");
+                }}
               >
                 <span className="eyebrow">
                   {flipped ? "DEFINITION" : "VOCABULARY"}

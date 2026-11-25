@@ -1,3 +1,4 @@
+import { analyticsEnabled, setAnalyticsEnabled } from "../utils/analytics";
 import { InstallGuide } from "../components/Pwa";
 import { Author } from "../components/Author";
 import { APP_VERSION } from "../data/version";
@@ -19,6 +20,7 @@ import { type Data } from "../types";
 import { tools } from "../data/tools";
 export function Preferences() {
   const { data, update, toast } = useStore();
+  const [anonymousStats, setAnonymousStats] = useState(analyticsEnabled);
   const p = data.preferences;
   const [start, setStart] = useState(p.schoolStart);
   const [end, setEnd] = useState(p.schoolEnd);
@@ -29,6 +31,26 @@ export function Preferences() {
         description="让速度工具箱更适合你的学习习惯。"
       />
       <div className="settings-stack">
+        <Panel title="匿名使用统计">
+          <p className="muted">
+            正式网页版及联网 PWA 使用 Umami Cloud
+            统计匿名访问、设备与浏览器类型、工具打开及功能使用次数。不会上传成绩、课表、单词、便签、文件或输入内容。桌面客户端及开发环境不参与统计。
+          </p>
+          <label className="check">
+            <input
+              type="checkbox"
+              checked={anonymousStats}
+              onChange={(e) => {
+                setAnalyticsEnabled(e.target.checked);
+                setAnonymousStats(analyticsEnabled());
+              }}
+            />
+            允许匿名使用统计
+          </label>
+          <p className="footnote">
+            关闭立即生效，仅保存在当前浏览器；未配置统计服务时不会加载脚本。尊重浏览器“请勿追踪”设置。
+          </p>
+        </Panel>
         <Panel title="新手向导">
           <button onClick={showGuide}>重新查看使用向导</button>
         </Panel>

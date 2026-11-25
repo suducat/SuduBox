@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { electiveModel, chooseSubject } from "../utils/electives";
 import { presetCourses, importPreset } from "../utils/school";
 import { useRef } from "react";
@@ -176,6 +177,7 @@ export function AipImport() {
                   importPreset(d, preset.id, selected, replace, uid),
                 );
                 if (ok) {
+                  trackUsage("schedule.import");
                   toast("已导入课表时段；原课堂记录与便签保留");
                   setOpen(false);
                 }

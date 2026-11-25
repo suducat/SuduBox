@@ -2981,3 +2981,7 @@ input,textarea,select { scroll-margin-top:90px; scroll-margin-bottom:100px; }
   .formula-card .math { max-width:100%; }
   .pwa-update { justify-content:flex-start; }
 }
+
+.study-rooms-stack {
+  max-width: none;
+}

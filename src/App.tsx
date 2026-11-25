@@ -1,3 +1,5 @@
+import StudyRooms from "./pages/StudyRooms";
+import { visitPage } from "./utils/analytics";
 import { UpdateNotice } from "./components/Pwa";
 import Gpa from "./pages/Gpa";
 import { Onboarding, GUIDE_KEY } from "./components/Onboarding";
@@ -132,12 +134,16 @@ export default function App() {
       window.removeEventListener("keydown", shortcut);
     };
   }, []);
+  useEffect(() => {
+    visitPage(route);
+  }, [route]);
   const tool = tools.find((t) => t.id === route);
   useEffect(() => {
     document.title = `${tool?.name ?? "工具中心"} · 速度工具箱`;
   }, [tool]);
   const pages: Record<string, React.ReactNode> = {
     home: <Home />,
+    "study-rooms": <StudyRooms />,
     schedule: <Schedule />,
     notes: <Notes />,
     exams: <Exams />,

@@ -1,4 +1,5 @@
 import {
+  DoorOpen,
   LayoutDashboard,
   CalendarDays,
   StickyNote,
@@ -17,6 +18,13 @@ import {
   UserRound,
 } from "lucide-react";
 export const tools = [
+  {
+    id: "study-rooms",
+    name: "自习室查询",
+    icon: DoorOpen,
+    group: "学习中心",
+    keywords: "Study Rooms 教室 自动查询当前可用自习室",
+  },
   {
     id: "home",
     name: "工作台",

@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { useState } from "react";
 import katex from "katex";
 import "katex/dist/katex.min.css";
@@ -150,7 +151,10 @@ export default function Formulas() {
               {hidden ? (
                 <button
                   className="hidden-formula"
-                  onClick={() => setSelected(f)}
+                  onClick={() => {
+                    setSelected(f);
+                    trackUsage("formulas.view");
+                  }}
                 >
                   回忆一下，再点击查看
                 </button>
@@ -158,7 +162,13 @@ export default function Formulas() {
                 <MathView value={f.expression} />
               )}
               <p>{f.description}</p>
-              <button className="text-button" onClick={() => setSelected(f)}>
+              <button
+                className="text-button"
+                onClick={() => {
+                  setSelected(f);
+                  trackUsage("formulas.view");
+                }}
+              >
                 查看变量与适用条件 →
               </button>
             </article>

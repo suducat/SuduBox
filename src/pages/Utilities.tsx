@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { QuestionCards } from "../components/QuestionCards";
 import { useState } from "react";
 import { Shuffle, Copy, RotateCcw, ArrowRight } from "lucide-react";
@@ -72,6 +73,7 @@ export function RandomTool() {
       return;
     }
     setError("");
+    trackUsage("random.draw");
     if (unique) {
       const r = draw(all, count);
       setPool(r.remaining);
@@ -342,6 +344,7 @@ export function TextTool() {
             onClick={() => {
               setPrevious({ input, output });
               setOutput(cleanText(input, options));
+              trackUsage("text.clean");
               toast("整理完成，请核对后复制");
             }}
           >

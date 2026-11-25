@@ -125,3 +125,39 @@ assert(
 for (const icon of manifest.icons)
   await access(new URL("../dist/" + icon.src, import.meta.url));
 console.log("PASS: Manifest 安装地址、图标、独立窗口与子路径隔离");
+
+// Study room source JSON is bundled locally and must be in the offline shell.
+const roomData = JSON.parse(
+  await readFile(
+    new URL("../src/data/study-rooms.json", import.meta.url),
+    "utf8",
+  ),
+);
+let roomAsset;
+for (const entry of entries.filter((path) => path.endsWith(".js"))) {
+  const js = await readFile(
+    new URL("../dist/" + entry, import.meta.url),
+    "utf8",
+  );
+  if (js.includes(roomData.sourceSha256)) roomAsset = entry;
+}
+assert(roomAsset, "Study room dataset must be in a precached local bundle");
+assert.equal(
+  (await request({ method: "GET", url: scope + roomAsset, mode: "cors" })).url,
+  scope + roomAsset,
+);
+assert(
+  !entries.some((path) => /https?:|umami/i.test(path)),
+  "Remote analytics must not be precached",
+);
+assert.equal(
+  await request({
+    method: "POST",
+    url: "https://gateway.umami.is/api/send",
+    mode: "cors",
+  }),
+  undefined,
+);
+console.log(
+  "PASS: 自习室完整数据可离线命中，Umami 不进入预缓存且请求不受 SW 拦截",
+);

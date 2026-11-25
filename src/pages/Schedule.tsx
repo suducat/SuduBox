@@ -1,3 +1,4 @@
+import { trackUsage } from "../utils/analytics";
 import { schoolState, dayCourses } from "../utils/school";
 import { SchoolStatus, SchoolSetup } from "../components/RoundTwo";
 import { SafeForm } from "../components/SafeForm";
@@ -117,6 +118,7 @@ export default function Schedule() {
       }))
     ) {
       setEdit(null);
+      trackUsage("schedule.save");
       toast("课程已保存");
     }
   };

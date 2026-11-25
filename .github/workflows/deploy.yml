@@ -28,6 +28,8 @@ jobs:
       - run: npm test
       - name: Build for actual Pages path
         env:
+          VITE_UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
+          VITE_UMAMI_HOSTNAME: ${{ vars.UMAMI_HOSTNAME }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: npm run build -- --base "$PAGES_BASE_PATH/"
       - name: Retain previous asset generations
